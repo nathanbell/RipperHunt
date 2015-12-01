@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>panel demo</title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <style>
+  .panel-content {
+    padding: 1em;
+	
+  }
+  ul {
+	  list-style-type:none;
+  }
+  
+  .ui-page .ui-header{
+	  background: #460702;
+	  
+  }
+  
+  h1{
+	  color: #000000;
+	  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  font-size: 24px;
+	  
+  }
+  </style>
+</head>
+<body>
+ 
+<div data-role="page" id="page1">
+  <div data-role="header">
+  	<a href="#menu" data-role="button" data-inline="true" data-icon="bars">Menu</a>
+    <h1>J.R.</h1>
+  </div>
+  
+ 
+  <!-- defaultpanel  -->
+  <div data-role="panel" id="menu" data-theme="b">
+ 
+    <div class="panel-content">
+      <ul>
+      	<li>Home</li>
+        <li>Bookings</li>
+        <li>Newsletter</li>
+        <li>Favourites</li>
+        <li>Rules</li>
+      </ul>
+     
+    </div><!-- /content wrapper for padding -->
+  </div><!-- /defaultpanel -->
+</div>
+ 
+</body>
