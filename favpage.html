@@ -1,0 +1,77 @@
+<doctype html>
+	<html>
+	<head>
+		<title></title>
+	    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+	<div data-role="page" id="item1">
+		<div data-role="main" class="ui-content">
+			<h2> item 1</h2>
+			<p> information about item </p>
+			
+			<a href="#item2" class="ui-btn ui-btn-a ui-btn-inline"> Item2</a>
+			<a href="#favourites" class="ui-btn ui-btn-a ui-btn-inline"> Favourites</a>
+			<input type="checkbox" id="favourite1">
+			<label for="favourite1"> Add to Fav</label>
+			
+		</div>
+	</div>
+	
+	<div data-role="page" id="item2">
+		<div data-role="main" class="ui-content">
+			<h2> item 2</h2>
+			<p> information about item </p>
+			
+			<a href="#item1" class="ui-btn ui-btn-a ui-btn-inline"> Item1</a>
+			<a href="#favourites" class="ui-btn ui-btn-a ui-btn-inline"> Favourites</a>
+			<input type="checkbox" id="favourite2">
+			<label for="favourite2"> Add to Fav</label>
+			
+		</div>
+	</div>
+		
+		<div data-role="page" id="favourites">
+			
+			<div datarole="header">
+				<h1> Favourites </h1>
+			</div>
+			<div role="main" class="ui-content">
+					<p>My Favourites</p>
+					<div id="favourite-content">No Favourites</div>
+					
+				
+			</div>	
+			
+		</div>
+			
+			<script>
+			
+	
+	$(document).on('pagecontainerbeforehide','body', function(event, ui){ 
+		if (ui.nextPage.attr('id') == "favourites"){
+
+			if( $("#favourite1").is(":checked")){ 
+
+				$("#favourite-content").html("item 1 ");
+				
+			}
+			else {
+				$("#favourite-content").html("");
+			}
+			
+			if( $("#favourite2").is(":checked")){
+				$("#favourite-content").append("item2 ");
+			}
+			
+		}
+		
+
+	});
+	
+			</script>
+
+	</body>
+	</html>

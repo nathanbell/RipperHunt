@@ -1,0 +1,4 @@
+git pull
+git commit -m "text gere"
+git add *
+la -la

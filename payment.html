@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>
+		Sripe Payment
+	</title>
+	<script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+	<script src="https://checkout.stripe.com/checkout.js"></script>
+</head>
+<body>
+
+	<form id="frmBooking" name="bookingForm" action="post">
+		<input id="item_name" name="item_name" type="text" value="2 cinema tickets"/>
+		<input id="total_value" name="total_value" type="text" value="20"/>
+	<button id="customButton">Purchase</button>
+	</form>
+
+	<div align="center" id="thankyouPayment"></div>
+
+	<script>
+
+	jQuery(function($){
+
+		var $form = $('#frmBooking');
+		var handler = StripeCheckout.configure({
+
+			key: 'pk_test_cp21BcECf4kMMUbSlRlZlsMo',
+			token: function(token) {
+
+				if(token.id){
+					$("#thankyouPayment").html("Thank you your payment went through");
+				}
+			}
+
+
+		});
+
+
+	$('#customButton').on('click', function(e) {
+        // Open Checkout with further options
+        handler.open({
+          name: 'Demo Site',
+          currency: 'gbp',
+          description: $('#item_name').val(),
+          amount: $('#total_value').val() * 100
+        });
+        e.preventDefault();
+      });
+
+      // Close Checkout on page navigation
+      $(window).on('popstate', function() {
+        handler.close();
+      });
+      });
+
+
+
+
+	</script>
+
+</body>
+</html>
