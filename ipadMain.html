@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ripper Street</title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" type="text/css" href="alexstyle.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" href="jquery.ui.datepicker.mobile.css" /> 
+  <script src="jQuery.ui.datepicker.js"></script>
+  <script src="jquery.ui.datepicker.mobile.js"></script>
+
+<style> 
+#panel {
+    padding: 5px;
+    text-align: center;
+    background-color: #460702;
+    border: solid 1px #78040D;
+        padding: 50px;
+    display: none;
+}
+#navBar {
+	width: 100%;
+	height: 50px;
+    padding: 5px;
+    text-align: center;
+    background-color: #460702;
+    border: solid 1px #78040D;
+}
+#navBar2 {
+	width: 100%;
+	height: 50px;
+    padding: 5px;
+    text-align: center;
+    background-color: #460702;
+    border: solid 1px #78040D;
+}
+
+
+
+#panel2 {
+    padding: 50px;
+    display: none;
+        background-color: #460702;
+    border: solid 1px #78040D;
+}
+
+#hamburger{
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+#hamburger2{
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+</style>
+<script> 
+$(document).on('pageinit', "#home", function(){
+    $("#hamburger").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+
+});
+</script>
+</head>
+<body>
+
+<!-- HOME -->
+ 
+<div data-role="page" id="home">
+
+  
+<!--navBar holds the hamburger menu item -->
+<div id="navBar">
+	<img src="images/basic/hamburger.png" id="hamburger">
+</div>
+<!--Panel is the slide drop down menu -->
+<div id="panel">	
+		<ul>		
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+</div>
+  
+  <div role="main" class="ui-content">
+
+  <h1>Home Content</h1>
+
+  </div>
+
+
+</div><!-- Closing Home Page -->
+
+<!-- POI MAP -->
+
+<div data-role="page" id="poimap">
+<script> 
+$(document).on('pagecreate', "#poimap", function(){
+	console.log("Hello Its me")
+	
+    $("#hamburger2").click(function(){
+        $("#panel2").slideToggle("slow");
+    });
+
+});
+</script>
+<style type="text/css">
+	#navBar2 {
+	width: 100%;
+	height: 50px;
+    padding: 5px;
+    text-align: center;
+    background-color: #460702;
+    border: solid 1px #78040D;
+}
+
+</style>
+
+<!--navBar holds the hamburger menu item -->
+<div id="navBar2">
+
+	<img src="images/basic/hamburger.png" id="hamburger2">
+</div>
+<!--Panel is the slide drop down menu -->
+<div id="panel2">	
+		<ul>		
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+</div>
+  
+  <div role="main" class="ui-content">
+
+  <h1>POI MAP</h1>
+  
+
+  </div>
+</div><!-- Closing POI Map Page -->
+
+<!-- RULES -->
+
+<div data-role="page" id="rules">
+<!--navBar holds the hamburger menu item -->
+<div id="navBar">
+	<img src="images/basic/hamburger.png" id="hamburger">
+</div>
+<!--Panel is the slide drop down menu -->
+<div id="panel">	
+		<ul>		
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+</div>
+  
+  <div role="main" class="ui-content">
+
+  <h1>Rules</h1>
+
+  </div>
+  <div data-role="footer" >
+    <h1>&copy; Group One</h1>
+  </div>
+  
+
+  
+  
+</div><!-- Closing Rules Page -->
+
+<div data-role="page" id="favourites">
+<!--navBar holds the hamburger menu item -->
+<div id="navBar">
+	<img src="images/basic/hamburger.png" id="hamburger">
+</div>
+<!--Panel is the slide drop down menu -->
+<div id="panel">	
+		<ul>		
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+</div>
+  
+  <div role="main" class="ui-content">
+
+  <h1>Favourites</h1>
+
+  </div>
+  <div data-role="footer" >
+    <h1>&copy; Group One</h1>
+  </div>
+  
+
+  
+  
+</div><!-- Closing Fav Page -->
+
+<div data-role="page" id="newsletter">
+<!--navBar holds the hamburger menu item -->
+<div id="navBar">
+	<img src="images/basic/hamburger.png" id="hamburger">
+</div>
+<!--Panel is the slide drop down menu -->
+<div id="panel">	
+		<ul>		
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+</div>
+  
+  <div role="main" class="ui-content">
+
+  <h1>Newsletter</h1>
+
+  </div>
+  <div data-role="footer" >
+    <h1>&copy; Group One</h1>
+  </div>
+  
+
+  
+  
+</div><!-- Closing Newsletter Page -->
+
+<div data-role="page" id="booking">
+<!--navBar holds the hamburger menu item -->
+<div id="navBar">
+	<img src="images/basic/hamburger.png" id="hamburger">
+</div>
+<!--Panel is the slide drop down menu -->
+<div id="panel">	
+		<ul>		
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+</div>
+  
+  <div role="main" class="ui-content">
+
+  <h1>Booking</h1>
+
+  </div>
+  <div data-role="footer" >
+    <h1>&copy; Group One</h1>
+  </div>
+  
+
+  
+  
+</div><!-- Closing booking Page -->
+ 
+</body>
+</html>
