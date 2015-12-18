@@ -3,6 +3,7 @@
 	border:none;
 	margin:0;
 	padding:0;
+	background:#78040D;
 }
 .ui-input-search input {
 	height:19px;
@@ -21,10 +22,29 @@
 }
 /* Styles for the body of the app*/
 .ui-content{
-	height:450px;
-	width:300px;
+	height:600px;
+	width:100%;
 	background-image:url("http://orig00.deviantart.net/de42/f/2012/342/c/9/jack_the_ripper_by_davepalumbo-d5nf3d2.jpg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+	color:#EDE8E2;
+}
+.ui-content form {
+	width: 350px;
+	
+}
+
+.ui-btn{
+	width: 50px;
+	display:inline;
+}
+
+.ui-page .ui-header {
+	background:#78040D;
+	color:#EDE8E2;
+}
+.ui-page .ui-footer {
+	background:#78040D;
+	color:#EDE8E2;
 }
