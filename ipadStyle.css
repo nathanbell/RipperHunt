@@ -1,6 +1,6 @@
 @import url(http://db.onlinewebfonts.com/c/99d5b7c014e2fec2a0229f689be73991?family=Gypsy+Curse);
 
-#panel,#panel2,#panel3,#panel4,#panel5,#panel6  {
+#panel,#panel2,#panel3,#panel4,#panel5,#panel6,#panel7,#panel8,#panel9,#panel6,#panel10,#panel1  {
     padding: 5px;
     text-align: center;
     background-image: url("images/basic/wall.jpg");
@@ -27,7 +27,7 @@
     border: solid 1px #78040D;
 }
 
-#hamburger, #hamburger2, #hamburger3, #hamburger4, #hamburger5, #hamburger6{
+#hamburger, #hamburger2, #hamburger3, #hamburger4, #hamburger5, #hamburger6, #hamburger7, #hamburger8, #hamburger9, #hamburger10, #hamburger11{
 	float: left;
 	width: 40px;
 	height: 40px;
@@ -108,7 +108,7 @@
     src: url(fonts/gypsycurse.tff);
 }
 
-#home, #poimap, #rules, #favourites, #newsletter, #victim1, #victim2, #victim3, #victim4, #victim5{
+#home, #poimap, #rules, #favourites, #newsletter, #booking, #victim1, #victim2, #victim3, #victim4, #victim5{
     height: 100%;
     width: 100%;
     background-image: url("images/basic/background.jpg");
@@ -143,3 +143,76 @@
 #informationText{
     padding-top: 20px;
 }
+
+/*Gallery Ipad */
+
+.menuTop{
+    background-color: #78040D;
+}
+
+.slider-nav h1 {
+        display: inline-block;
+        width: 100%;
+        height: 80px;
+
+    }
+    
+    .slider-nav .slick-slide {
+        height: 100px;
+        color: #000;
+        background: white;
+        text-align: center;
+        margin: 20px 10px 15px 0px;
+        border: 5px solid black;
+
+    }
+    
+    .slider-for {
+        background-color: white;
+        width: 90%;
+        height: 40%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .brickWallContainer{
+        width: 75%;
+        height: auto;
+        margin: 0 auto;
+        
+        background-image: url("images/basic/wall.jpg");
+        background-size:cover;
+         border-style: solid;
+        border-color: #460702;
+  }
+
+  .parchmentContainer{
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url("images/basic/parchment.png");
+    background-size:cover;
+  }
+
+    .parchmentContainer h1{
+  padding: 40px 40px 0px 40px;
+
+  }
+    .parchmentContainer p{
+  padding: 5px 45px 0px 45px;
+
+  }
+    .buttonBackground{
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    background-image: url("images/basic/button.png");
+    background-repeat: no-repeat;
+  }
+    .buttonBackground p{
+      font-size: 18px;
+      font-family: "Arial Black", Gadget, sans-serif;
+    padding-top: 25px;
+    padding-left: 20px;
+  }

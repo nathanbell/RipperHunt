@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ripper Street</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="ipadStyle.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/menu.js"></script>
+</head>
+
+<body>
+    <!-- HOME -->
+    <div data-role="page" id="home">
+    <div data-role="content">
+    <div data-role="collapsible" id="testa" data-content-theme="a">
+      <h3><center>Ripper Hunt</center></h3>
+      <div class="menuTop">
+                <a href="#poimap">
+                    <div class="menuItem iconHome" onclick="slideUp()">Home</div>
+                </a>
+                <a href="#rules">
+                    <div class="menuItem iconRules" onclick="slideUp()">Rules</div>
+                </a>
+                <a href="#favourites">
+                    <div class="menuItem iconFavourites" onclick="slideUp()">Favourites</div>
+                </a>
+            </div>
+            <div class="menuBottom">
+                <a href="#newsletter">
+                    <div class="menuItem iconNewsletter" onclick="slideUp()">Newsletter</div>
+                </a>
+                <a href="#booking">
+                    <div class="menuItem iconBooking" onclick="slideUp()">Booking</div>
+                </a>
+            </div>
+    </div>
+  </div>
+        <!--navBar holds the hamburger menu item -->
+        <!-- <div id="navBar">
+            <img src="images/basic/hamburger.png" id="hamburger">
+        </div> -->
+
+        <!--Panel is the slide drop down menu -->
+       <!--  <div id="panel">
+            <div class="menuTop">
+                <a href="#poimap">
+                    <div class="menuItem iconHome" onclick="slideUp()">Home</div>
+                </a>
+                <a href="#rules">
+                    <div class="menuItem iconRules" onclick="slideUp()">Rules</div>
+                </a>
+                <a href="#favourites">
+                    <div class="menuItem iconFavourites" onclick="slideUp()">Favourites</div>
+                </a>
+            </div>
+            <div class="menuBottom">
+                <a href="#newsletter">
+                    <div class="menuItem iconNewsletter" onclick="slideUp()">Newsletter</div>
+                </a>
+                <a href="#booking">
+                    <div class="menuItem iconBooking" onclick="slideUp()">Booking</div>
+                </a>
+            </div> -->
+            <!-- <div class="menuUp"><img src="images/up.png" id="upChevron"></div> -->
+            
+        </div>
+        <div role="main" class="ui-content mainPage">
+            <div class="topSection">
+                <div class="logoSection"><img src="images/basic/logo.png"></div>
+                <div class="rulesSection"></div>
+            </div>
+            <div class="mainBody">
+                <p id="textHeader">WELCOME TO RIPPER STREET</p>
+                <p id="informationText">
+                    You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where </p>
+            </div>
+        </div>
+    </div>
+    <!-- Closing Home Page -->
+    <!-- POI MAP -->
+    <div data-role="page" id="poimap">
+        <!--navBar holds the hamburger menu item -->
+        <div id="navBar">
+            <img src="images/basic/hamburger.png" id="hamburger2">
+        </div>
+        <!--Panel is the slide drop down menu -->
+        <div id="panel2">
+            <div class="menuTop">
+                <a href="#poimap">
+                    <div class="menuItem iconHome" onclick="slideUp()">Home</div>
+                </a>
+                <a href="#rules">
+                    <div class="menuItem iconRules" onclick="slideUp()">Rules</div>
+                </a>
+                <a href="#favourites">
+                    <div class="menuItem iconFavourites" onclick="slideUp()">Favourites</div>
+                </a>
+            </div>
+            <div class="menuBottom">
+                <a href="#newsletter">
+                    <div class="menuItem iconNewsletter" onclick="slideUp()">Newsletter</div>
+                </a>
+                <a href="#booking">
+                    <div class="menuItem iconBooking" onclick="slideUp()">Booking</div>
+                </a>
+            </div>
+            <div class="menuUp"><img src="images/up.png" id="upChevron"></div>
+            <script type="text/javascript">
+            function slideUp(){
+              $('#panel2').toggle();
+            }
+            </script>
+        </div>
+        <div role="main" class="ui-content">
+            
+            <div class="mainBody">
+                <p id="textHeader">POI MAP</p>
+                <p id="informationText">
+                    <a href="#victim1">Murder Scene One</a>
+                    <a href="#victim2"> Murder Scene Two</a>
+                    <a href="#victim3">Murder Scene Three</a>
+                    <a href="#victim4">Murder Scene Four</a>
+                    <a href="#victim5">Murder Scene Five</a></p>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $('#hamburger2').click(function() {
+            $('#panel2').slideToggle();
+        });
+        </script>
+    </div>
+    <!-- Closing POI Map Page -->
+    <!-- RULES -->
+    <div data-role="page" id="rules">
+        <!--navBar holds the hamburger menu item -->
+        <div id="navBar">
+            <img src="images/basic/hamburger.png" id="hamburger3">
+        </div>
+        <!--Panel is the slide drop down menu -->
+        <div id="panel3">
+            <div class="menuTop">
+                <a href="#poimap">
+                    <div class="menuItem iconHome">Home</div>
+                </a>
+                <a href="#rules">
+                    <div class="menuItem iconRules">Rules</div>
+                </a>
+                <a href="#favourites">
+                    <div class="menuItem iconFavourites">Favourites</div>
+                </a>
+            </div>
+            <div class="menuBottom">
+                <a href="#newsletter">
+                    <div class="menuItem iconNewsletter">Newsletter</div>
+                </a>
+                <a href="#booking">
+                    <div class="menuItem iconBooking">Booking</div>
+                </a>
+            </div>
+            <div class="menuUp"><img src="images/up.png" id="upChevron"></div>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="mainBody">
+                <p id="textHeader">Rules</p>
+                <p id="informationText">
+                    You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where </p>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $('#hamburger3').click(function() {
+            $('#panel3').slideToggle();
+        });
+        </script>
+    </div>
+    <!-- Closing Rules Page -->
+    <div data-role="page" id="favourites">
+        <!--navBar holds the hamburger menu item -->
+        <div id="navBar">
+            <img src="images/basic/hamburger.png" id="hamburger4">
+        </div>
+        <!--Panel is the slide drop down menu -->
+        <div id="panel4">
+            <div class="menuTop">
+                <a href="#poimap">
+                    <div class="menuItem iconHome">Home</div>
+                </a>
+                <a href="#rules">
+                    <div class="menuItem iconRules">Rules</div>
+                </a>
+                <a href="#favourites">
+                    <div class="menuItem iconFavourites">Favourites</div>
+                </a>
+            </div>
+            <div class="menuBottom">
+                <a href="#newsletter">
+                    <div class="menuItem iconNewsletter">Newsletter</div>
+                </a>
+                <a href="#booking">
+                    <div class="menuItem iconBooking">Booking</div>
+                </a>
+            </div>
+            <div class="menuUp"><img src="images/up.png" id="upChevron"></div>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="mainBody">
+                <p id="textHeader">Favourites</p>
+                <p id="informationText">
+                    You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where </p>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $('#hamburger4').click(function() {
+            $('#panel4').slideToggle();
+        });
+        </script>
+    </div>
+    <!-- Closing Fav Page -->
+    <div data-role="page" id="newsletter">
+        <!--navBar holds the hamburger menu item -->
+        <div id="navBar">
+            <img src="images/basic/hamburger.png" id="hamburger5">
+        </div>
+        <!--Panel is the slide drop down menu -->
+        <div id="panel5">
+            <div class="menuTop">
+                <a href="#poimap">
+                    <div class="menuItem iconHome">Home</div>
+                </a>
+                <a href="#rules">
+                    <div class="menuItem iconRules">Rules</div>
+                </a>
+                <a href="#favourites">
+                    <div class="menuItem iconFavourites">Favourites</div>
+                </a>
+            </div>
+            <div class="menuBottom">
+                <a href="#newsletter">
+                    <div class="menuItem iconNewsletter">Newsletter</div>
+                </a>
+                <a href="#booking">
+                    <div class="menuItem iconBooking">Booking</div>
+                </a>
+            </div>
+            <div class="menuUp"><img src="images/up.png" id="upChevron"></div>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="mainBody">
+                <p id="textHeader">Newsletter</p>
+                <p id="informationText">
+                    You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where </p>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $('#hamburger5').click(function() {
+            $('#panel5').slideToggle();
+        });
+        </script>
+    </div>
+    <!-- Closing Newsletter Page -->
+    <!--Booking Page-->
+    <div data-role="page" id="booking">
+        <!--navBar holds the hamburger menu item -->
+        <div id="navBar">
+            <img src="images/basic/hamburger.png" id="hamburger6">
+        </div>
+        <!--Panel is the slide drop down menu -->
+        <div id="panel6">
+            <div class="menuTop">
+                <a href="#poimap">
+                    <div class="menuItem iconHome">Home</div>
+                </a>
+                <a href="#rules">
+                    <div class="menuItem iconRules">Rules</div>
+                </a>
+                <a href="#favourites">
+                    <div class="menuItem iconFavourites">Favourites</div>
+                </a>
+            </div>
+            <div class="menuBottom">
+                <a href="#newsletter">
+                    <div class="menuItem iconNewsletter">Newsletter</div>
+                </a>
+                <a href="#booking">
+                    <div class="menuItem iconBooking">Booking</div>
+                </a>
+            </div>
+            <div class="menuUp"><img src="images/up.png" id="upChevron"></div>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="mainBody">
+                <p id="textHeader">Booking</p>
+                <p id="informationText">
+                    You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where You are taken back to the 1800's where </p>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $('#hamburger6').click(function() {
+            $('#panel6').slideToggle();
+        });
+        </script>
+    </div>
+    <!-- Closing booking Page -->
+
+    <!--Victim 1 Page-->
+    <div data-role="page" id="victim1">
+        <!--navBar holds the hamburger menu item -->
+        <div id="navBar">
+            <img src="images/basic/hamburger.png" id="hamburger7">
+        </div>
+        <!--Panel is the slide drop down menu -->
+        <div id="panel7">
+            <div class="menuTop">
+                <a href="#poimap">
+                    <div class="menuItem iconHome">Home</div>
+                </a>
+                <a href="#rules">
+                    <div class="menuItem iconRules">Rules</div>
+                </a>
+                <a href="#favourites">
+                    <div class="menuItem iconFavourites">Favourites</div>
+                </a>
+            </div>
+            <div class="menuBottom">
+                <a href="#newsletter">
+                    <div class="menuItem iconNewsletter">Newsletter</div>
+                </a>
+                <a href="#booking">
+                    <div class="menuItem iconBooking">Booking</div>
+                </a>
+            </div>
+            <div class="menuUp"><img src="images/up.png" id="upChevron"></div>
+        </div>
+        <div role="main" class="ui-content">
+           <div class="brickWallContainer">
+    <div class="buttonBackground"><p>Anne Chapman</p></div>
+        
+        
+    </div>
+    <div class="parchmentContainer">
+  <h1>Anne Chapman</h1> 
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            centerMode: true,
+            arrows: false,
+            focusOnSelect: true
+        });
+    });
+    </script>
+        </div>
+        <script type="text/javascript">
+        $('#hamburger7').click(function() {
+            $('#panel7').slideToggle();
+        });
+        </script>
+    </div>
+    <!-- Closing Victim 1 Page -->
+    <!--Victim 2 Page-->
+    <div data-role="page" id="victim2">
+        <!--navBar holds the hamburger menu item -->
+        <div id="navBar">
+            <img src="images/basic/hamburger.png" id="hamburger8">
+        </div>
+        <!--Panel is the slide drop down menu -->
+        <div id="panel8">
+            <div class="menuTop">
+                <a href="#poimap">
+                    <div class="menuItem iconHome">Home</div>
+                </a>
+                <a href="#rules">
+                    <div class="menuItem iconRules">Rules</div>
+                </a>
+                <a href="#favourites">
+                    <div class="menuItem iconFavourites">Favourites</div>
+                </a>
+            </div>
+            <div class="menuBottom">
+                <a href="#newsletter">
+                    <div class="menuItem iconNewsletter">Newsletter</div>
+                </a>
+                <a href="#booking">
+                    <div class="menuItem iconBooking">Booking</div>
+                </a>
+            </div>
+            <div class="menuUp"><img src="images/up.png" id="upChevron"></div>
+        </div>
+        <div role="main" class="ui-content">
+            <h1>Victim 1</h1>
+        </div>
+        <script type="text/javascript">
+        $('#hamburger8').click(function() {
+            $('#panel8').slideToggle();
+        });
+        </script>
+    </div>
+    <!-- Closing Victim 2 Page -->
+    <!--Victim 3 Page-->
+    <div data-role="page" id="victim3">
+        <!--navBar holds the hamburger menu item -->
+        <div id="navBar">
+            <img src="images/basic/hamburger.png" id="hamburger9">
+        </div>
+        <!--Panel is the slide drop down menu -->
+        <div id="panel9">
+            <div class="menuTop">
+                <a href="#poimap">
+                    <div class="menuItem iconHome">Home</div>
+                </a>
+                <a href="#rules">
+                    <div class="menuItem iconRules">Rules</div>
+                </a>
+                <a href="#favourites">
+                    <div class="menuItem iconFavourites">Favourites</div>
+                </a>
+            </div>
+            <div class="menuBottom">
+                <a href="#newsletter">
+                    <div class="menuItem iconNewsletter">Newsletter</div>
+                </a>
+                <a href="#booking">
+                    <div class="menuItem iconBooking">Booking</div>
+                </a>
+            </div>
+            <div class="menuUp"><img src="images/up.png" id="upChevron"></div>
+        </div>
+        <div role="main" class="ui-content">
+            <h1>Victim 3</h1>
+        </div>
+        <script type="text/javascript">
+        $('#hamburger9').click(function() {
+            $('#panel9').slideToggle();
+        });
+        </script>
+    </div>
+    <!-- Closing Victim 3 Page -->
+    <!--Victim 4 Page-->
+    <div data-role="page" id="victim4">
+        <!--navBar holds the hamburger menu item -->
+        <div id="navBar">
+            <img src="images/basic/hamburger.png" id="hamburger10">
+        </div>
+        <!--Panel is the slide drop down menu -->
+        <div id="panel10">
+            <div class="menuTop">
+                <a href="#poimap">
+                    <div class="menuItem iconHome">Home</div>
+                </a>
+                <a href="#rules">
+                    <div class="menuItem iconRules">Rules</div>
+                </a>
+                <a href="#favourites">
+                    <div class="menuItem iconFavourites">Favourites</div>
+                </a>
+            </div>
+            <div class="menuBottom">
+                <a href="#newsletter">
+                    <div class="menuItem iconNewsletter">Newsletter</div>
+                </a>
+                <a href="#booking">
+                    <div class="menuItem iconBooking">Booking</div>
+                </a>
+            </div>
+            <div class="menuUp"><img src="images/up.png" id="upChevron"></div>
+        </div>
+        <div role="main" class="ui-content">
+            <h1>Victim 3</h1>
+        </div>
+        <script type="text/javascript">
+        $('#hamburger10').click(function() {
+            $('#panel10').slideToggle();
+        });
+        </script>
+    </div>
+    <!-- Closing Victim 4 Page -->
+    <!--Victim 5 Page-->
+    <div data-role="page" id="victim5">
+        <!--navBar holds the hamburger menu item -->
+        <div id="navBar">
+            <img src="images/basic/hamburger.png" id="hamburger11">
+        </div>
+        <!--Panel is the slide drop down menu -->
+        <div id="panel11">
+            <div class="menuTop">
+                <a href="#poimap">
+                    <div class="menuItem iconHome">Home</div>
+                </a>
+                <a href="#rules">
+                    <div class="menuItem iconRules">Rules</div>
+                </a>
+                <a href="#favourites">
+                    <div class="menuItem iconFavourites">Favourites</div>
+                </a>
+            </div>
+            <div class="menuBottom">
+                <a href="#newsletter">
+                    <div class="menuItem iconNewsletter">Newsletter</div>
+                </a>
+                <a href="#booking">
+                    <div class="menuItem iconBooking">Booking</div>
+                </a>
+            </div>
+            <div class="menuUp"><img src="images/up.png" id="upChevron"></div>
+        </div>
+        <div role="main" class="ui-content">
+            <h1>Victim 3</h1>
+        </div>
+        <script type="text/javascript">
+        $('#hamburger11').click(function() {
+            $('#panel11').slideToggle();
+        });
+        </script>
+    </div>
+    <!-- Closing Victim 5 Page -->
+</body>
+
+</html>

@@ -1,4 +1,8 @@
-<<<<<<< HEAD
+/* Styles for design */
+
+.ui-content{
+}
+
 /* Styles for the navigation sections of the app */
 .ui-input-search {
 	border:none;
@@ -20,64 +24,66 @@
     height: 14px;
     opacity: 0.5;
 }
-/* Styles for the body of the app*/
-.ui-content{
-	height:450px;
-	width:300px;
-	/*background-image:url("http://orig00.deviantart.net/de42/f/2012/342/c/9/jack_the_ripper_by_davepalumbo-d5nf3d2.jpg");*/
+/* Styles for the Drag Game*/
+#dandbackground{
+	height: 480px;
+	width: 300px;
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+	background-image: url("crimescene.jpg");
+	z-index: -100000;
 }
-=======
-/* Styles for the navigation sections of the app */
-.ui-input-search {
-	border:none;
-	margin:0;
-	padding:0;
-	background:#78040D;
-}
-.ui-input-search input {
-	height:19px;
-}
-.ui-input-search::after {
-    position: absolute;
-    left: 0.7125em;
-    top: 50%;
-    margin-top: -7px;
-    content: "";
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 14px;
-    height: 14px;
-    opacity: 0.5;
-}
-/* Styles for the body of the app*/
-.ui-content{
-	height:600px;
-	width:100%;
-	background-image:url("http://orig00.deviantart.net/de42/f/2012/342/c/9/jack_the_ripper_by_davepalumbo-d5nf3d2.jpg");
+
+#makeMeDraggable { 
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 50px; 
+	height: 50px; 
+	background-image: url("handprint.png");
 	background-repeat: no-repeat;
-    background-attachment: fixed;
+}
+
+#makeMeDraggable2 { 
+	position: absolute;
+	top: 140px;
+	left: 120px;
+	width: 50px; 
+	height: 50px; 
+	background-image: url("knife.png");
+	background-repeat: no-repeat;
+}
+
+#makeMeDraggable3 { 
+	position: absolute;
+	top:120px;
+	left:20px;
+	width: 60px; 
+	height: 83px; 
+	background-image: url("letter.png");
+	background-repeat: no-repeat;
+}
+
+#droppable{
+	position: absolute;
+	left: 195px;
+	top:300px;
+	width: 75px; 
+	height: 75px; 
+	background-image: url("basket.png");
+	background-repeat: no-repeat;
     background-position: center;
-	color:#EDE8E2;
-}
-.ui-content form {
-	width: 350px;
-	
+	z-index:1;
 }
 
-.ui-btn{
-	width: 50px;
-	display:inline;
+#drop_score{
+	position: absolute;
+	left: 220px;
+	top:20px;
+	height: 20px;
+	width: 40px;
+	text-align: center;
+	vertical-align: middle;
+	clear:both;
 }
-
-.ui-page .ui-header {
-	background:#78040D;
-	color:#EDE8E2;
-}
-.ui-page .ui-footer {
-	background:#78040D;
-	color:#EDE8E2;
-}
->>>>>>> e5e300cd6fcbfaaeb67f7c58bae3a34dfb3bba68

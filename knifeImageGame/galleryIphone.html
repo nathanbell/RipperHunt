@@ -1,0 +1,93 @@
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <title>POI - Anna Chapman</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <style>
+  body{
+  	background-image: url("images/basic/background.jpg");
+  	background-size:cover;
+  }
+  .gallerySlider {
+  	width:auto;
+  	height: auto;
+  	padding-top: 15px;
+  	padding-bottom: 15px;
+  }
+
+  .gallerySlider img {
+  	
+  	width: auto;
+  	height: auto;
+  }
+
+  .brickWallContainer{
+  	width: 75%;
+  	margin: 0 auto;
+  	height: auto;
+  	background-image: url("images/basic/wall.jpg");
+  	background-size:cover;
+            border-style: solid;
+        border-color: #460702;
+  }
+
+  .parchmentContainer{
+  	width: 75%;
+  	height: 100%;
+  	margin: 0 auto;
+  	background-image: url("images/basic/parchment.png");
+  	background-size:cover;
+  }
+
+    .parchmentContainer h1{
+	padding: 40px 40px 0px 40px;
+
+  }
+    .parchmentContainer p{
+	padding: 5px 45px 0px 45px;
+
+  }
+  .buttonBackground{
+  	width: 250px;
+  	height: 10%;
+  	margin: 0 auto;
+  	background-image: url("images/basic/button.png");
+  	background-repeat: no-repeat;
+  }
+    .buttonBackground p{
+    	font-size: 18px;
+    	font-family: "Arial Black", Gadget, sans-serif;
+  	padding-top: 25px;
+  	padding-left: 20px;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="brickWallContainer">
+  		<div class="buttonBackground"><p>Anne Chapman</p></div>
+	  <div class="gallerySlider">
+	    <img src="images/victims/AnnChapman/deadOne.png">
+	    <img src="images/victims/AnnChapman/port.png">
+	    <img src="images/victims/AnnChapman/deathCert.png">
+	  </div>
+  </div>
+  <div class="parchmentContainer">
+  <h1>Anne Chapman</h1>	
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.gallerySlider').slick();
+    });
+  </script>
+
+  </body>
+</html>
