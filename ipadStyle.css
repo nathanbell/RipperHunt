@@ -1,0 +1,145 @@
+@import url(http://db.onlinewebfonts.com/c/99d5b7c014e2fec2a0229f689be73991?family=Gypsy+Curse);
+
+#panel,#panel2,#panel3,#panel4,#panel5,#panel6  {
+    padding: 5px;
+    text-align: center;
+    background-image: url("images/basic/wall.jpg");
+    background-size: cover;
+    border: solid 1px #78040D;
+    padding: 50px;
+    display: none;
+    height: 50%;
+}
+#navBar {
+	width: 100%;
+	height: 50px;
+    padding: 5px;
+    text-align: center;
+    background-color: #460702;
+    border: solid 1px #78040D;
+}
+#navBar2 {
+	width: 100%;
+	height: 50px;
+    padding: 5px;
+    text-align: center;
+    background-color: #460702;
+    border: solid 1px #78040D;
+}
+
+#hamburger, #hamburger2, #hamburger3, #hamburger4, #hamburger5, #hamburger6{
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+
+/*Sliding Menu CSS*/
+
+.container{
+    width: 100%;
+    height: auto;
+
+}
+
+.menuTop{
+    width: 100%;
+    margin: 0 auto;
+    height: 150px;    
+}
+
+.menuBottom{
+    width: 100%;
+    margin: 0 auto;
+    height: 150px;
+    
+}
+
+.menuItem{
+   width: 100px;
+   height: 100px;
+   background-color: grey; 
+   float: left;
+   margin-left: 6.33%;
+   font-family: 'Gypsy Curse';
+   font-size: 30px;
+   border-radius: 50%;
+   
+}
+
+.menuUp{
+    clear: both;
+}
+
+#upChevron{
+    width: 50px;
+}
+
+/* Menu Icons */
+
+.iconHome{
+    background-image: url("images/icons/home.png");
+    background-size: cover;
+}
+
+.iconRules{
+    background-image: url("images/icons/rules.png");
+    background-size: cover;
+}
+
+.iconFavourites{
+    background-image: url("images/icons/favourites.png");
+    background-size: cover;
+}
+
+.iconNewsletter{
+    background-image: url("images/icons/newsletter.png");
+    background-size: cover;
+}
+
+.iconBooking{
+    background-image: url("images/icons/booking.png");
+    background-size: cover;
+}
+
+/*Styling throughout*/
+
+@font-face {
+    font-family: gypsyCurse;
+    src: url(fonts/gypsycurse.tff);
+}
+
+#home{
+    height: 100%;
+    width: 100%;
+    background-image: url("images/basic/background.jpg");
+    background-repeat:inherit;
+}
+
+.logoSection{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+.mainBody{
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url("images/basic/parchment.png");
+    background-size: 100% 100%;
+}
+
+/*Text Styling*/
+
+.mainBody p{
+    margin: 0 auto;
+    width: 90%;
+}
+#textHeader{
+    padding-top: 20px;
+    font-family: Gypsy Curse;
+    text-align: center;
+    font-size: 26px;
+}
+#informationText{
+    padding-top: 20px;
+}
