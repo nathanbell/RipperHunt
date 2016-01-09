@@ -28,24 +28,29 @@
         <div id="panel">
             <div class="menuTop">
                 <a href="#poimap">
-                    <div class="menuItem iconHome">Home</div>
+                    <div class="menuItem iconHome" onclick="slideUp()">Home</div>
                 </a>
                 <a href="#rules">
-                    <div class="menuItem iconRules">Rules</div>
+                    <div class="menuItem iconRules" onclick="slideUp()">Rules</div>
                 </a>
                 <a href="#favourites">
-                    <div class="menuItem iconFavourites">Favourites</div>
+                    <div class="menuItem iconFavourites" onclick="slideUp()">Favourites</div>
                 </a>
             </div>
             <div class="menuBottom">
                 <a href="#newsletter">
-                    <div class="menuItem iconNewsletter">Newsletter</div>
+                    <div class="menuItem iconNewsletter" onclick="slideUp()">Newsletter</div>
                 </a>
                 <a href="#booking">
-                    <div class="menuItem iconBooking">Booking</div>
+                    <div class="menuItem iconBooking" onclick="slideUp()">Booking</div>
                 </a>
             </div>
             <div class="menuUp"><img src="images/up.png" id="upChevron"></div>
+            <script type="text/javascript">
+            function slideUp(){
+              $('#panel').slideToggle();
+            }
+            </script>
         </div>
         <div role="main" class="ui-content mainPage">
             <div class="topSection">
@@ -70,27 +75,32 @@
         <div id="panel2">
             <div class="menuTop">
                 <a href="#poimap">
-                    <div class="menuItem iconHome">Home</div>
+                    <div class="menuItem iconHome" onclick="slideUp()">Home</div>
                 </a>
                 <a href="#rules">
-                    <div class="menuItem iconRules">Rules</div>
+                    <div class="menuItem iconRules" onclick="slideUp()">Rules</div>
                 </a>
                 <a href="#favourites">
-                    <div class="menuItem iconFavourites">Favourites</div>
+                    <div class="menuItem iconFavourites" onclick="slideUp()">Favourites</div>
                 </a>
             </div>
             <div class="menuBottom">
                 <a href="#newsletter">
-                    <div class="menuItem iconNewsletter">Newsletter</div>
+                    <div class="menuItem iconNewsletter" onclick="slideUp()">Newsletter</div>
                 </a>
                 <a href="#booking">
-                    <div class="menuItem iconBooking">Booking</div>
+                    <div class="menuItem iconBooking" onclick="slideUp()">Booking</div>
                 </a>
             </div>
             <div class="menuUp"><img src="images/up.png" id="upChevron"></div>
+            <script type="text/javascript">
+            function slideUp(){
+              $('#panel2').toggle();
+            }
+            </script>
         </div>
         <div role="main" class="ui-content">
-            <h1>POI MAP</h1>
+            
             <div class="mainBody">
                 <p id="textHeader">POI MAP</p>
                 <p id="informationText">

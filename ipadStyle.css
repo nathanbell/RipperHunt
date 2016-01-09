@@ -108,7 +108,7 @@
     src: url(fonts/gypsycurse.tff);
 }
 
-#home{
+#home, #poimap, #rules, #favourites, #newsletter, #victim1, #victim2, #victim3, #victim4, #victim5{
     height: 100%;
     width: 100%;
     background-image: url("images/basic/background.jpg");
