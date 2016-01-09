@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Styles for the navigation sections of the app */
 .ui-input-search {
 	border:none;
@@ -28,3 +29,55 @@
     background-attachment: fixed;
     background-position: center;
 }
+=======
+/* Styles for the navigation sections of the app */
+.ui-input-search {
+	border:none;
+	margin:0;
+	padding:0;
+	background:#78040D;
+}
+.ui-input-search input {
+	height:19px;
+}
+.ui-input-search::after {
+    position: absolute;
+    left: 0.7125em;
+    top: 50%;
+    margin-top: -7px;
+    content: "";
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    opacity: 0.5;
+}
+/* Styles for the body of the app*/
+.ui-content{
+	height:600px;
+	width:100%;
+	background-image:url("http://orig00.deviantart.net/de42/f/2012/342/c/9/jack_the_ripper_by_davepalumbo-d5nf3d2.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+	color:#EDE8E2;
+}
+.ui-content form {
+	width: 350px;
+	
+}
+
+.ui-btn{
+	width: 50px;
+	display:inline;
+}
+
+.ui-page .ui-header {
+	background:#78040D;
+	color:#EDE8E2;
+}
+.ui-page .ui-footer {
+	background:#78040D;
+	color:#EDE8E2;
+}
+>>>>>>> e5e300cd6fcbfaaeb67f7c58bae3a34dfb3bba68
