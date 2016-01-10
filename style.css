@@ -128,7 +128,7 @@
   }
 
   #murderContainer{
-    width: 250px;
+    width: 200px;
     height: auto;
     background-color: black;
     float: left;
@@ -141,7 +141,7 @@
   }
 
     #murderContainer2{
-    width: 250px;
+    width: 200px;
     height: auto;
     float: left;
     display: inline-block;
@@ -156,6 +156,10 @@
     margin: 1%;
     width: 98%;
     display: inline-block;
+    
+  }
+
+  #address{
     
   }
 
