@@ -1,8 +1,14 @@
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ripper Street</title>
+
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ripper Street</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
   <link rel="stylesheet" type="text/css" href="alexstyle.css">
   <link rel="stylesheet" href="ripper.css" />
@@ -16,27 +22,20 @@
 	<script src="https://checkout.stripe.com/checkout.js"></script>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <link rel="stylesheet" href="https://resources/demos/style.css">
+  
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="style.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- 33 KB -->
+
+<!-- Scripts for Fotorama -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-    <!-- 3 KB -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
-  	
-	<script src="https://checkout.stripe.com/checkout.js"></script>
-    <!-- 16 KB -->
-    <style>
+    
 
-    </style>
 </head>
-
 <body>
-    <!--################################################ HOME PAGE ##############################################-->
-    <div data-role="page" id="home">
-        <div data-role="header" data-position="fixed" class="navheader">
+ 
+<div data-role="page" id="home">
+
+   <div data-role="header" data-position="fixed" class="navheader">
             <h1>Ripper Hunt</h1>
             <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
         </div>
@@ -66,139 +65,172 @@
                 <li><a href="#booking">Booking</a></li>
             </ul>
         </div>
-        <!-- /panel -->
-    </div>
-    <!-- Closing Home Page -->
-    <!--################################################ POI MAP PAGE ##############################################-->
-    <!-- Opening POI Main Navigation Menu Page -->
-    <div data-role="page" id="poimap">
-        <div data-role="header" data-position="fixed">
-            <h1>POI Map</h1>
-            <a href="#navpanelPOI" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
-        </div>
-        <div role="main" class="ui-content">
-            <h2>Select a murder scene</h2>
-            <div id="poilinksmap">
-                <a href="#victim1">Murder Scene One</a>
-                <a href="#victim2"> Murder Scene Two</a>
-                <a href="#victim3">Murder Scene Three</a>
-                <a href="#victim4">Murder Scene Four</a>
-                <a href="#victim5">Murder Scene Five</a>
-            </div>
-        </div>
-        <div data-role="footer">
-            <h1>&copy; Group One</h1>
-        </div>
-        <div data-role="panel" id="navpanelPOI" data-position-fixed="true">
-            <ul data-role="listview">
-                <div data-mini="true" class="ui-input-search">
-                    <input data-mini="true" placeholder="Search"> </input>
-                </div>
-                <li><a href="#poimap">Home</a></li>
-                <li><a href="#rules">Rules</a></li>
-                <li><a href="#favourites">Favourites</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
-                <li><a href="#booking">Booking</a></li>
-            </ul>
-        </div>
-        <!-- /panel -->
-    </div>
-    <!-- Closing POI Page -->
-    <!--################################################ RULES PAGE ##############################################-->
-    <!-- Opening Rules Page -->
-    <div data-role="page" id="rules">
-        <div data-role="header" data-position="fixed">
-            <h1>Rules</h1>
-            <a href="#navpanelrules" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
-        </div>
-        <div role="main" class="ui-content">
-        </div>
-        <div data-role="footer">
-            <h1>&copy; Group One</h1>
-        </div>
-        <div data-role="panel" id="navpanelrules" data-position-fixed="true">
-            <ul data-role="listview">
-                <div data-mini="true" class="ui-input-search">
-                    <input data-mini="true" placeholder="Search"> </input>
-                </div>
-                <li><a href="#poimap">Home</a></li>
-                <li><a href="#rules">Rules</a></li>
-                <li><a href="#favourites">Favourites</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
-                <li><a href="#booking">Booking</a></li>
-            </ul>
-        </div>
-        <!-- /panel -->
-    </div>
-    <!-- Closing Rules Page -->
-    <!--################################################ FAV PAGE ##############################################-->
-    <!-- Opening Favourites Page -->
-    <div data-role="page" id="favourites">
-        <div data-role="header" data-position="fixed">
-            <h1>Favourites</h1>
-            <a href="#navpanelfav" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
-        </div>
-        <div role="main" class="ui-content">
-        </div>
-        <div data-role="footer">
-            <h1>&copy; Group One</h1>
-        </div>
-        <div data-role="panel" id="navpanelfav" data-position-fixed="true">
-            <ul data-role="listview">
-                <div data-mini="true" class="ui-input-search">
-                    <input data-mini="true" placeholder="Search"> </input>
-                </div>
-                <li><a href="#poimap">Home</a></li>
-                <li><a href="#rules">Rules</a></li>
-                <li><a href="#favourites">Favourites</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
-                <li><a href="#booking">Booking</a></li>
-            </ul>
-        </div>
-        <!-- /panel -->
-    </div>
-    <!-- Closing Favourites Page -->
-    <!--################################################ NEWSLETTER PAGE ##############################################-->
-    <!-- Opening Newsletter Page -->
-    <div data-role="page" id="newsletter">
-        <div data-role="header" data-position="fixed">
-            <h1>Newsletter</h1>
-            <a href="#navpanelnews" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
-        </div>
-        <div role="main" class="ui-content">
-            <form>
-                <label for="basic">Name:</label>
-                <input type="text" name="name" id="basic" value="" data-mini="true" />
-                <label for="basic">Email:</label>
-                <input type="email" name="name" id="basic" value="" data-mini="true" />
-                <label for="basic">Do you agree to the terms and conditions:</label>
-                <select name="tandc" id="tandcslider" data-role="slider" data-mini="true" />
-                <option value="no">No</option>
-                <option value="yes">Yes</option>
-                </select>
-            </form>
-        </div>
-        <div data-role="footer">
-            <h1>&copy; Group One</h1>
-        </div>
-        <div data-role="panel" id="navpanelnews" data-position-fixed="true">
-            <ul data-role="listview">
-                <div data-mini="true" class="ui-input-search">
-                    <input data-mini="true" placeholder="Search"> </input>
-                </div>
-                <li><a href="#poimap">Home</a></li>
-                <li><a href="#rules">Rules</a></li>
-                <li><a href="#favourites">Favourites</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
-                <li><a href="#booking">Booking</a></li>
-            </ul>
-        </div>
-        <!-- /panel -->
-    </div>
-    <!-- Closing Newsletter Page -->
-    <!--################################################ BOOKING PAGE ##############################################-->
-    <!-- Opening Bookings Page -->
-    <div data-role="page" id="booking">
+  
+</div><!-- Closing Home Page -->
+
+<!-- Opening POI Main Navigation Menu Page -->
+
+<div data-role="page" id="poimap">
+  <div data-role="header" data-position="fixed">
+  
+    <h1>POI Map</h1>
+	
+	<a href="#navpanelPOI" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+	
+  </div>
+  <div role="main" class="ui-content">
+    <h2>Select a murder scene</h2>
+	
+	<div id="poilinksmap">
+	
+		<a href="#victim1">Murder Scene One</a>
+		<a href="#victim2"> Murder Scene Two</a>
+		<a href="#victim3">Murder Scene Three</a>
+		<a href="#victim4">Murder Scene Four</a>
+		<a href="#victim5">Murder Scene Five</a>
+	
+	</div>
+	
+	</div>
+  <div data-role="footer">
+    <h1>&copy; Group One</h1>
+  </div>
+  
+    <div data-role="panel" id="navpanelPOI" data-position-fixed="true">
+		<ul data-role="listview">
+		<div data-mini="true" class="ui-input-search">
+			<input data-mini="true" placeholder="Search"> </input>
+		</div>
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+	</div><!-- /panel -->
+  
+</div><!-- Closing POI Page -->
+
+<!-- Opening Rules Page -->
+
+<div data-role="page" id="rules">
+  <div data-role="header" data-position="fixed">
+  
+    <h1>Rules</h1>
+	
+	<a href="#navpanelrules" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+	
+  </div>
+ 
+  <div role="main" class="ui-content">
+  
+	
+</div>
+  <div data-role="footer">
+    <h1>&copy; Group One</h1>
+  </div>
+  
+    <div data-role="panel" id="navpanelrules" data-position-fixed="true">
+		<ul data-role="listview">
+		<div data-mini="true" class="ui-input-search">
+			<input data-mini="true" placeholder="Search"> </input>
+		</div>
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+	</div><!-- /panel -->
+  
+</div><!-- Closing Rules Page -->
+
+<!-- Opening Favourites Page -->
+
+<div data-role="page" id="favourites">
+  <div data-role="header" data-position="fixed">
+  
+    <h1>Favourites</h1>
+	
+	<a href="#navpanelfav" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+	
+  </div>
+  <div role="main" class="ui-content">
+					<p>My Favourites</p>
+					<div id="favourite-content">No Favourites</div>
+					
+				
+			</div>
+  
+  <div data-role="footer">
+    <h1>&copy; Group One</h1>
+  </div>
+  
+    <div data-role="panel" id="navpanelfav" data-position-fixed="true">
+		<ul data-role="listview">
+		<div data-mini="true" class="ui-input-search">
+			<input data-mini="true" placeholder="Search"> </input>
+		</div>
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+	</div><!-- /panel -->
+  <script>
+  
+
+  </script>
+</div><!-- Closing Favourites Page -->
+ 
+ <!-- Opening Newsletter Page -->
+ 
+ <div data-role="page" id="newsletter">
+  <div data-role="header" data-position="fixed">
+  
+    <h1>Newsletter</h1>
+	
+	<a href="#navpanelnews" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+	
+  </div>
+  <div role="main" class="ui-content">
+	  <form>
+	<label for="basic">Name:</label>
+	<input type="text" name="name" id="basic" value="" data-mini="true" />
+	
+	<label for="basic">Email:</label>
+	<input type="email" name="name" id="basic" value="" data-mini="true" />
+	
+	<label for="basic">Do you agree to the terms and conditions:</label>
+	<select name="tandc" id="tandcslider" data-role="slider" data-mini="true" />
+		<option value="no">No</option>
+		<option value="yes">Yes</option>
+	</select>
+  </form>
+  </div>
+  <div data-role="footer">
+    <h1>&copy; Group One</h1>
+  </div>
+  
+    <div data-role="panel" id="navpanelnews" data-position-fixed="true">
+		<ul data-role="listview">
+		<div data-mini="true" class="ui-input-search">
+			<input data-mini="true" placeholder="Search"> </input>
+		</div>
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+	</div><!-- /panel -->
+  
+</div><!-- Closing Newsletter Page -->
+
+<!-- Opening Bookings Page -->
+
+<div data-role="page" id="booking">
   <div data-role="header" data-position="fixed">
   
     <h1>Booking</h1>
@@ -246,11 +278,11 @@
 		</ul>
 	</div><!-- /panel -->
   
-</div>
-    <!-- Closing booking Page -->
-    <!-- POI Pages are below -->
-    <!--################################################ VICTIM PAGES ##############################################-->
-    <!--################################################ VICTIM 1 PAGE ##############################################-->
+</div><!-- Closing booking Page -->
+
+<!-- POI Pages are below -->
+
+<!--################################################ VICTIM 1 PAGE ##############################################-->
     <!-- Opening Victim 1 -->
     <div data-role="page" id="victim1">
         <div data-role="header" data-position="fixed" class="navheader">
@@ -294,6 +326,51 @@
         <script src="js/slickk.js"></script>
     </div>
     <!-- Closing Victime 1 Page -->
+					<!--################################################ VICTIM 1 PAGE 2 ##############################################-->
+    <!-- Opening Victim 1 -->
+ 
+ <div data-role="page" id="victim1p2">
+
+   <div data-role="header" data-position="fixed" class="navheader">
+    
+	<h1>Victim 1</h1>
+	
+	<a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+	
+  </div>
+  
+  <div role="main" class="ui-content">
+
+  <h1>Murder Victim 1</h1>
+<p> information about item </p>
+			
+			<a href="#victim2" class="ui-btn ui-btn-a ui-btn-inline"> Item2</a>
+			<a href="#favourites" class="ui-btn ui-btn-a ui-btn-inline" onClick="fav();"> Favourites</a>
+			<input type="checkbox" id="favourite1">
+			<label for="favourite1"> Add to Fav</label>
+
+  </div>
+  
+  <div data-role="footer" >
+    <h1>&copy; Group One</h1>
+  </div>
+  
+  <div data-role="panel" id="navpanel" data-position-fixed="true">
+		<ul data-role="listview">
+		<div data-mini="true" class="ui-input-search">
+			<input data-mini="true" placeholder="Search"> </input>
+		</div>
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+	</div><!-- /panel -->
+  
+</div><!-- Closing Victime 1 Page -->
+
+
     <!--################################################ VICTIM 2 PAGE ##############################################-->
     <!-- Opening Victim 2 -->
     <div data-role="page" id="victim2">
@@ -317,17 +394,9 @@
                 <p id="informationText">Like Mary Nichols, Martha Tabram and Emma Smith; Annie Chapman led a somewhat nomadic existence around Spitalfields. Dorset Street.She was 45 years old, a short plump, ashen-faced consumptive who for four or so months prior to her death had been living at Crossingham's lodging house at number 35 Dorset Street where she paid eight pence a night for a double bed. She appears to have enjoyed a cordial relationship with the other tenants and the deputy keeper, Timothy Donovan, remembered her as being an inoffensive soul whose main weakness was a fondness for drink. Like many of the women in the area Annie supplemented the meagre income she obtained from crochet work and making and selling artificial flowers with prostitution. She had two regular clients, one known as Harry the Hawker, and the other a man named Ted Stanley, a supposed retired soldier who was known to her fellow lodgers as "the Pensioner." Like Mary Nichols, Martha Tabram and Emma Smith; Annie Chapman led a somewhat nomadic existence around Spitalfields. Dorset Street.</p>
                 <p id="informationText">She was 45 years old, a short plump, ashen-faced consumptive who for four or so months prior to her death had been living at Crossingham's lodging house at number 35 Dorset Street where she paid eight pence a night for a double bed. She appears to have enjoyed a cordial relationship with the other tenants and the deputy keeper, Timothy Donovan, remembered her as being an inoffensive soul whose main weakness was a fondness for drink. Like many of the women in the area Annie supplemented the meagre income she obtained from crochet work and making and selling artificial flowers with prostitution. She had two regular clients, one known as Harry the Hawker, and the other a man named Ted Stanley, a supposed retired soldier who was known to her fellow lodgers as "the Pensioner."</p>
             
-            <!-- FORM FOR GUESS THE RIDDLE GAME -->
-            <form action="" method="post" id="guess_form">
-                <label for="guess_word">Question: Where was she murdered?</label>
-                <input type="text" id="guess_word" />
-                <br />
-                <input type="submit" value="Guess!" id="submit_form" />
-                <span id="total_guesses">Guesses: 3</span>
-                <span id="words_guessed"></span>
-            </form>
+            
             </div>
-            <!-- FORM FOR GUESS THE RIDDLE CLOSE -->
+            
         </div>
         <div data-role="footer">
             <h1>&copy; Group One</h1>
@@ -347,6 +416,53 @@
         <!-- /panel -->
     </div>
     <!-- Closing Victime 2 Page -->
+    			<!--################################################ VICTIM 2 PAGE 2 ##############################################-->
+    <div data-role="page" id="victim2p2">
+
+   <div data-role="header" data-position="fixed" class="navheader">
+    
+	<h1>Victim 2</h1>
+	
+	<a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+	
+  </div>
+  
+  <div role="main" class="ui-content">
+
+  <h1>Murder Victim 2</h1>
+	
+	<!-- FORM FOR GUESS THE RIDDLE GAME -->
+  
+    <form action="" method="post" id="guess_form">
+        <label for="guess_word">Question: Where was she murdered?</label>
+		<input type="text" id="guess_word"/> <br />
+        <input type="submit" value="Guess!"  id="submit_form"/>
+		<span id="total_guesses">Guesses: 3</span>
+		<span id="words_guessed"></span>
+    </form>
+
+	<!-- FORM FOR GUESS THE RIDDLE CLOSE -->	
+
+  </div>
+  
+  <div data-role="footer" >
+    <h1>&copy; Group One</h1>
+  </div>
+  
+  <div data-role="panel" id="navpanel" data-position-fixed="true">
+		<ul data-role="listview">
+		<div data-mini="true" class="ui-input-search">
+			<input data-mini="true" placeholder="Search"> </input>
+		</div>
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+	</div><!-- /panel -->
+  
+</div>
     <!--################################################ VICTIM 3 PAGE ##############################################-->
     <!-- Opening Victim 3 -->
     <div data-role="page" id="victim3">
@@ -389,6 +505,45 @@
         <!-- /panel -->
     </div>
     <!-- Closing Victime 3 Page -->
+
+    			<!--################################################ VICTIM 3 PAGE 2 ##############################################-->
+<div data-role="page" id="victim3p2">
+
+   <div data-role="header" data-position="fixed" class="navheader">
+    
+	<h1>Victim 3</h1>
+	
+	<a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+	
+  </div>
+  
+  <div role="main" class="ui-content">
+
+  <h1>Murder Victim 3</h1>
+
+
+  </div>
+  
+  <div data-role="footer" >
+    <h1>&copy; Group One</h1>
+  </div>
+  
+  <div data-role="panel" id="navpanel" data-position-fixed="true">
+		<ul data-role="listview">
+		<div data-mini="true" class="ui-input-search">
+			<input data-mini="true" placeholder="Search"> </input>
+		</div>
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+	</div><!-- /panel -->
+  
+</div>
+
+    //
     <!--################################################ VICTIM 4 PAGE ##############################################-->
     <div data-role="page" id="victim4">
         <div data-role="header" data-position="fixed" class="navheader">
@@ -429,7 +584,43 @@
         </div>
         <!-- /panel -->
     </div>
+   	 <!--################################################ VICTIM 4 PAGE 2 ##############################################-->
     <!-- Closing Victime 4 Page -->
+    <div data-role="page" id="victim4p2">
+
+   <div data-role="header" data-position="fixed" class="navheader">
+    
+	<h1>Victim 4</h1>
+	
+	<a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+	
+  </div>
+  
+  <div role="main" class="ui-content">
+
+  <h1>Murder Victim 4</h1>
+
+
+  </div>
+  
+  <div data-role="footer" >
+    <h1>&copy; Group One</h1>
+  </div>
+  
+  <div data-role="panel" id="navpanel" data-position-fixed="true">
+		<ul data-role="listview">
+		<div data-mini="true" class="ui-input-search">
+			<input data-mini="true" placeholder="Search"> </input>
+		</div>
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+	</div><!-- /panel -->
+  
+</div>
     <!--################################################ VICTIM 5 PAGE ##############################################-->
     <div data-role="page" id="victim5">
         <div data-role="header" data-position="fixed" class="navheader">
@@ -451,23 +642,7 @@
                 <p id="informationText">Like Mary Nichols, Martha Tabram and Emma Smith; Annie Chapman led a somewhat nomadic existence around Spitalfields. Dorset Street.She was 45 years old, a short plump, ashen-faced consumptive who for four or so months prior to her death had been living at Crossingham's lodging house at number 35 Dorset Street where she paid eight pence a night for a double bed. She appears to have enjoyed a cordial relationship with the other tenants and the deputy keeper, Timothy Donovan, remembered her as being an inoffensive soul whose main weakness was a fondness for drink. Like many of the women in the area Annie supplemented the meagre income she obtained from crochet work and making and selling artificial flowers with prostitution. She had two regular clients, one known as Harry the Hawker, and the other a man named Ted Stanley, a supposed retired soldier who was known to her fellow lodgers as "the Pensioner." Like Mary Nichols, Martha Tabram and Emma Smith; Annie Chapman led a somewhat nomadic existence around Spitalfields. Dorset Street.</p>
                 <p id="informationText">She was 45 years old, a short plump, ashen-faced consumptive who for four or so months prior to her death had been living at Crossingham's lodging house at number 35 Dorset Street where she paid eight pence a night for a double bed. She appears to have enjoyed a cordial relationship with the other tenants and the deputy keeper, Timothy Donovan, remembered her as being an inoffensive soul whose main weakness was a fondness for drink. Like many of the women in the area Annie supplemented the meagre income she obtained from crochet work and making and selling artificial flowers with prostitution. She had two regular clients, one known as Harry the Hawker, and the other a man named Ted Stanley, a supposed retired soldier who was known to her fellow lodgers as "the Pensioner."</p>
             </div>
-            <!-- HTML FOR DRAG AND DROP GAME -->
-            <div id="dandbackground">
-                <span id="drop_score">0 / 3</span>
-                <div id="dd1">
-                    <div data="1" id="makeMeDraggable"> </div>
-                </div>
-                <div id="dd2">
-                    <div data="2" id="makeMeDraggable2"> </div>
-                </div>
-                <div id="dd3">
-                    <div data="3" id="makeMeDraggable3"> </div>
-                </div>
-                <div id="drop1">
-                    <div data="5" id="droppable"> </div>
-                </div>
-            </div>
-            <!-- CLOSING HTML FOR DRAG AND DROP GAME -->
+
         </div>
         <div data-role="footer">
             <h1>&copy; Group One</h1>
@@ -487,108 +662,174 @@
         <!-- /panel -->
     </div>
     <!-- Closing Victime 5 Page -->
+    <!--################################################ VICTIM 5 PAGE 2 ##############################################-->
+
+    <div data-role="page" id="victim5p2">
+
+   <div data-role="header" data-position="fixed" class="navheader">
+    
+	<h1>Victim 5</h1>
+	
+	<a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+	
+  </div>
+  
+  <div role="main" class="ui-content">
+	
+	<!-- HTML FOR DRAG AND DROP GAME -->
+  
+	<div id="dandbackground">
+  
+	 <span id="drop_score">0 / 3</span>
+	
+	 <div id="dd1">
+		<div data="1" id="makeMeDraggable"> </div>
+	 </div>
+	 
+	 <div id="dd2">
+		<div data="2" id="makeMeDraggable2"> </div>
+	 </div>
+	 
+	 <div id="dd3">
+		<div data="3" id="makeMeDraggable3"> </div>
+	 </div>
+	 
+	 <div id="drop1">
+		<div data="5" id="droppable"> </div>
+	 </div>
+  
+	</div>
+	
+  <!-- CLOSING HTML FOR DRAG AND DROP GAME -->
+	
+  </div>
+  
+  <div data-role="footer" >
+    <h1>&copy; Group One</h1>
+  </div>
+  
+  <div data-role="panel" id="navpanel" data-position-fixed="true">
+		<ul data-role="listview">
+		<div data-mini="true" class="ui-input-search">
+			<input data-mini="true" placeholder="Search"> </input>
+		</div>
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+	</div><!-- /panel -->
+  
+</div>
+
+
     <!--################################################ END ##############################################-->
-    <script>
-    $(document).ready(function() {
-        var total = 3;
-        var dropscore = 0;
-
-        $(dragGame);
+ 						<!--################################################ JAVASCRIPT ##############################################-->
+ <script>
 
 
 
-        //All code for Guessing riddle game
+	  
+	$(document).ready(function() {
+	var total = 3;
+	var dropscore = 0;
+	
+	$( dragGame );
+	
+	//All code for Guessing riddle game
+	
+	$("#submit_form").on("click", function(e) {
+	var murder = "kim";
+	var guess = $('#guess_word').val();
+	
+	//Validate input
+	if (guess == ""){
+			alert("Please enter a guess!");
+		} else {
+			wrongguess(guess);
+			var returned = theguess(murder, guess);
+	}
 
-        $("#submit_form").on("click", function(e) {
-            var murder = "kim";
-            var guess = $('#guess_word').val();
-
-            //Validate input
-            if (guess == "") {
-                alert("Please enter a guess!");
-            } else {
-                wrongguess(guess);
-                var returned = theguess(murder, guess);
-            }
-
-            //Take the bool returned and display the answer accoringly.
-            if (returned == false) {
-                total--;
-                $("#total_guesses").html("Incorrect! " + total + " guesses left");
-
-                if (total == 0) {
-                    this.disabled = true;
-                    $("#total_guesses").html("All your guesses are gone! No points scored here!");
-                }
-            } else if (returned == true) {
-                this.disabled = true;
-            }
-
-            e.preventDefault();
-        });
-
-        function theguess(murder, guess) {
-            if (murder == guess) {
-                $("#total_guesses").html("Correct!");
-                return true;
-            } else {
-                return false;
-            }
-        }
-
-        function wrongguess(guess) {
-            var guessarray = [];
-
-            guessarray.push(guess);
-
-            for (var i = 0; i < guessarray.length; i++) {
-                $("#words_guessed").html("<br>Your Last Guess was: " + guessarray.join("<br>"));
-            }
-        }
-
-        function dragGame() {
-            $('#makeMeDraggable').draggable();
-
-            $('#makeMeDraggable2').draggable();
-
-            $('#makeMeDraggable3').draggable();
-
-            $('#droppable').droppable({
-                drop: handleDropEvent
-            });
-        }
-
-        function handleDropEvent(event, ui) {
-
-            var draggable = ui.draggable.data;
-            var getAttribute = ui.draggable.attr('id');
-            var totalClues = 3;
-
-            if (getAttribute == "makeMeDraggable") {
-                dropscore++;
-                ui.draggable.draggable('disable');
-                $("#drop_score").html(dropscore + " / " + totalClues);
-            }
-
-            if (getAttribute == "makeMeDraggable2") {
-                dropscore++;
-                ui.draggable.draggable('disable');
-                $("#drop_score").html(dropscore + " / " + totalClues);
-            }
-
-            if (getAttribute == "makeMeDraggable3") {
-                dropscore++;
-                ui.draggable.draggable('disable');
-                $("#drop_score").html(dropscore + " / " + totalClues);
-            }
-
-            if (dropscore == totalClues) {
-                $("#drop_score").html(dropscore + " / " + totalClues);
-            }
-
-        }
-
+	//Take the bool returned and display the answer accoringly.
+	if (returned == false){
+		total --;
+		$("#total_guesses").html("Incorrect! " + total + " guesses left");
+		
+		if(total == 0){
+			this.disabled = true;
+			$("#total_guesses").html("All your guesses are gone! No points scored here!");
+		}
+	} else if (returned == true){
+		this.disabled = true;
+	}
+	
+	e.preventDefault();
     });
+	
+	function theguess(murder, guess){
+		if(murder == guess){
+			$("#total_guesses").html("Correct!");
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	function wrongguess(guess){
+	var guessarray = [];
+	
+	guessarray.push(guess);
+	
+		for(var i=0; i< guessarray.length; i++){
+			$("#words_guessed").html("<br>Your Last Guess was: " + guessarray.join("<br>"));
+		}
+	}
+	
+	function dragGame(){
+		$('#makeMeDraggable').draggable();
+		
+		$('#makeMeDraggable2').draggable();
+		
+		$('#makeMeDraggable3').draggable();
+		
+		$('#droppable').droppable({
+			drop: handleDropEvent
+		});
+	}
+		
+	function handleDropEvent(event, ui){
+		
+		var draggable = ui.draggable.data;
+		var getAttribute = ui.draggable.attr('id');
+		var totalClues = 3;
+		
+		if(getAttribute == "makeMeDraggable"){
+			dropscore++;
+			ui.draggable.draggable( 'disable' );
+			$("#drop_score").html(dropscore + " / " + totalClues);
+		}
+		
+		if(getAttribute == "makeMeDraggable2"){
+			dropscore++;
+			ui.draggable.draggable( 'disable' );
+			$("#drop_score").html(dropscore + " / " + totalClues);
+		}
+		
+		if(getAttribute == "makeMeDraggable3"){
+			dropscore++;
+			ui.draggable.draggable( 'disable' );
+			$("#drop_score").html(dropscore + " / " + totalClues);
+		}
+		
+		if(dropscore == totalClues){
+			$("#drop_score").html(dropscore + " / " + totalClues);
+		}
+		
+	}
+	
+	});
+
 $(function() {
     $( "#datepicker" ).datepicker();
   });
@@ -668,7 +909,14 @@ function fav() {
 		
 
 	}
-    </script>
-</body>
 
+
+
+
+
+	
+	
+ </script>
+ 
+</body>
 </html>

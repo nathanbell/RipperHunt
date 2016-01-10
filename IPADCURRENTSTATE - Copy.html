@@ -3,30 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-  <link rel="stylesheet" type="text/css" href="alexstyle.css">
-  <link rel="stylesheet" href="ripper.css" />
-  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
-  	<script src="https://code.jquery.com/jquery-1.8.3.js"></script>
-	<script src="https://checkout.stripe.com/checkout.js"></script>
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <link rel="stylesheet" href="https://resources/demos/style.css">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <title>Ripper Street</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="ripper.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- 33 KB -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <!-- 3 KB -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
-  	
-	<script src="https://checkout.stripe.com/checkout.js"></script>
     <!-- 16 KB -->
     <style>
 
@@ -199,54 +190,46 @@
     <!--################################################ BOOKING PAGE ##############################################-->
     <!-- Opening Bookings Page -->
     <div data-role="page" id="booking">
-  <div data-role="header" data-position="fixed">
-  
-    <h1>Booking</h1>
-	
-	<a href="#navpanelbooking" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
-	
-  </div>
-  
-  <div role="main" class="ui-content">	
-	
-  <form id="frmBooking" name="bookingForm" action="post">
-		
-		Number of People:<input onblur="findTotal()" id="qty" name="qty" type="text" value=""/>
-
-		Price: <input id="price" name="price" type="text" value="5" readonly>
-		Total Price:<input id="total" name="total" type="text" value="" readonly>
-		Date: <input type="text" id="datepicker"><br>
-
-		<button id="customButton">Purchase</button>
-		<label for="basic">Do you agree to the terms and conditions:</label>
-	<select name="tandc" id="tandcslider" data-role="slider" data-mini="true" />
-		<option value="no">No</option>
-		<option value="yes">Yes</option>
-	</select>
-	</form>
-
-	<div align="center" id="thankyouPayment"></div>
-  
-  </div>
-  
-  <div data-role="footer">
-    <h1>&copy; Group One</h1>
-  </div>
-  
-    <div data-role="panel" id="navpanelbooking" data-position-fixed="true">
-		<ul data-role="listview">
-		<div data-mini="true" class="ui-input-search">
-			<input data-mini="true" placeholder="Search"> </input>
-		</div>
-			<li><a href="#poimap">Home</a></li>
-			<li><a href="#rules">Rules</a></li>
-			<li><a href="#favourites">Favourites</a></li>
-			<li><a href="#newsletter">Newsletter</a></li>
-			<li><a href="#booking">Booking</a></li>
-		</ul>
-	</div><!-- /panel -->
-  
-</div>
+        <div data-role="header" data-position="fixed">
+            <h1>Booking</h1>
+            <a href="#navpanelbooking" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+        </div>
+        <div role="main" class="ui-content">
+            <form>
+                <label for="basic">Name:</label>
+                <input type="text" name="name" id="basic" value="" data-mini="true" />
+                <label for="basic">Email:</label>
+                <input type="email" name="name" id="basic" value="" data-mini="true" />
+                <label for="basic">Number of Adults:</label>
+                <input type="number" name="name" id="basic" value="" data-mini="true" />
+                <label for="basic">Number of Children:</label>
+                <input type="number" name="name" id="basic" value="" data-mini="true" />
+                <label for="basic">Date of Booking:</label>
+                <input type="date" name="name" id="basic" value="" data-mini="true" />
+                <label for="basic">Do you agree to the terms and conditions:</label>
+                <select name="tandc" id="tandcslider" data-role="slider" data-mini="true" />
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+                </select>
+            </form>
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanelbooking" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+    </div>
     <!-- Closing booking Page -->
     <!-- POI Pages are below -->
     <!--################################################ VICTIM PAGES ##############################################-->
@@ -589,85 +572,6 @@
         }
 
     });
-$(function() {
-    $( "#datepicker" ).datepicker();
-  });
-
-	function findTotal(){
-    var arr = document.getElementsByName('qty');
-    var pri = document.getElementsByName('price');
-
-    var arrV = parseInt(arr.value);
-    var priV = parseInt(arr.value);
-
-	//var tot = arrV * priV;
-	var tot =0;
-
-   for(var i=0;i<arr.length;i++){
-        if(parseInt(arr[i].value))
-            tot += parseInt(arr[i].value)*parseInt(pri[i].value);
-    }
-    document.getElementById('total').value = tot;
-}
-
-	jQuery(function($){
-
-		var $form = $('#frmBooking');
-		var handler = StripeCheckout.configure({
-
-			key: 'pk_test_cp21BcECf4kMMUbSlRlZlsMo',
-			token: function(token) {
-
-				if(token.id){
-					$("#thankyouPayment").html("Thank you your payment went through");
-				}
-			}
-
-
-		});
-
-
-	$('#customButton').on('click', function(e) {
-        // Open Checkout with further options
-        handler.open({
-          name: 'Demo Site',
-          currency: 'gbp',
-          description: $('#item_name').val(),
-          amount: $('#total').val() * 100
-        });
-        e.preventDefault();
-      });
-
-      // Close Checkout on page navigation
-      $(window).on('popstate', function() {
-        handler.close();
-      });
-      });
-function fav() {
- 		console.log("here")
-		
-
-
-			
-			if( $("#favourite1").is(":checked")){
-    var $item1 = $('<a href="#victim1">').text("item 1 ");
-    
-    $("#favourite-content").empty().append($item1);
-}
-			else {
-				$("#favourite-content").html("");
-			}
-			
-			if( $("#favourite2").is(":checked")){
-    var $item2 = $('<a href="#item2">').text("item 2 ");
-    
-    $("#favourite-content").append($item2);
-}
-			
-		
-		
-
-	}
     </script>
 </body>
 
