@@ -83,6 +83,14 @@
     border-color: #460702;
   }
 
+  
+  .mapBackground{
+    
+    height: 400px;
+    background-image: url('images/basic/rippermap.jpg');
+    background-size: 100% 100%;
+   
+  }
 
  #youtubeVideo{
  	padding-top: 50px;
