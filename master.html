@@ -520,6 +520,12 @@
   <div role="main" class="ui-content">
 
   <h1>Murder Victim 3</h1>
+  <p>What is this image? </p>
+  <div id="pannel" ><img src="knifeblur.jpg" height="300" width="300"/> </div>
+<br>
+
+  <input type="text" id="ans"> <br>
+  <button onclick="userGuess()"> Guess</button> <br>
 
 
   </div>
@@ -830,19 +836,21 @@
 	
 	});
 
+//BOOKINGS PAGE START
+
 $(function() {
     $( "#datepicker" ).datepicker();
   });
 
-	function findTotal(){
+  function findTotal(){
     var arr = document.getElementsByName('qty');
     var pri = document.getElementsByName('price');
 
     var arrV = parseInt(arr.value);
     var priV = parseInt(arr.value);
 
-	//var tot = arrV * priV;
-	var tot =0;
+  //var tot = arrV * priV;
+  var tot =0;
 
    for(var i=0;i<arr.length;i++){
         if(parseInt(arr[i].value))
@@ -851,24 +859,24 @@ $(function() {
     document.getElementById('total').value = tot;
 }
 
-	jQuery(function($){
+  jQuery(function($){
 
-		var $form = $('#frmBooking');
-		var handler = StripeCheckout.configure({
+    var $form = $('#frmBooking');
+    var handler = StripeCheckout.configure({
 
-			key: 'pk_test_cp21BcECf4kMMUbSlRlZlsMo',
-			token: function(token) {
+      key: 'pk_test_cp21BcECf4kMMUbSlRlZlsMo',
+      token: function(token) {
 
-				if(token.id){
-					$("#thankyouPayment").html("Thank you your payment went through");
-				}
-			}
-
-
-		});
+        if(token.id){
+          $("#thankyouPayment").html("Thank you your payment went through");
+        }
+      }
 
 
-	$('#customButton').on('click', function(e) {
+    });
+
+
+  $('#customButton').on('click', function(e) {
         // Open Checkout with further options
         handler.open({
           name: 'Demo Site',
@@ -885,33 +893,54 @@ $(function() {
       });
       });
 function fav() {
- 		console.log("here")
-		
+    console.log("here")
+    
+//BOOKINGS PAGE START
 
+//FAVOURITES PAGE START
 
-			
-			if( $("#favourite1").is(":checked")){
+      
+      if( $("#favourite1").is(":checked")){
     var $item1 = $('<a href="#victim1">').text("item 1 ");
     
     $("#favourite-content").empty().append($item1);
-}
-			else {
-				$("#favourite-content").html("");
-			}
-			
-			if( $("#favourite2").is(":checked")){
+
+                                          }         
+      else {
+        $("#favourite-content").html("");
+      }
+      
+      if( $("#favourite2").is(":checked")){
     var $item2 = $('<a href="#item2">').text("item 2 ");
     
     $("#favourite-content").append($item2);
-}
-			
-		
-		
+            }
+        
 
-	}
+  }
 
+  //FAVOURITES PAGE END
 
+  //KNIFE GAME START
 
+  function userGuess(){
+
+       var ans = document.getElementById('ans').value;
+
+      if (ans == "knife") {
+          document.getElementById("pannel").innerHTML = '<img src="knife.jpg" height="300" width="300""/>';
+        alert("correct");
+
+        //change image pixels, only made it smaller to test.
+
+      }
+      else{
+        alert("wrong");
+      } 
+
+    }
+
+    //KNIFE GAME END
 
 
 	
