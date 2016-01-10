@@ -84,43 +84,47 @@
 <!-- Opening POI Main Navigation Menu Page -->
 
 <div data-role="page" id="poimap">
-  <div data-role="header" data-position="fixed">
+    <div data-role="header" data-position="fixed">
   
     <h1>POI Map</h1>
-	
-	<a href="#navpanelPOI" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
-	
+  
+  <a href="#navpanelPOI" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+  
   </div>
-  <div role="main" class="ui-content">
+  <div role="main" class="ui-content poipagemugshots">
     <h2>Select a murder scene</h2>
-	
-	<div id="poilinksmap">
-	
-		<a href="#victim1">Murder Scene One</a>
-		<a href="#victim2"> Murder Scene Two</a>
-		<a href="#victim3">Murder Scene Three</a>
-		<a href="#victim4">Murder Scene Four</a>
-		<a href="#victim5">Murder Scene Five</a>
-	
-	</div>
-	
-	</div>
+
+    <div class="brickWallContainer" id="sizeofpiece">
+      
+    <div class="containerMurder">
+      <a href="#victim1"><div id='murderContainer'><img src="images/victims/AnnChapman/dead.png">Ann Chapman<p>Address: 29 Hanbury Street </p></div></a>
+      <a href="#victim2"><div id='murderContainer'><img src="images/victims/CatherineEddowes/dead.png">Catherine Eddowes<p>Address: Mitre Square</p></div></a>
+      <a href="#victim3"><div id='murderContainer'><img src="images/victims/ElizabethStride/dead.png">Elizabeth Stride<p>Address: Dutfield's Yard</p></div></a>
+    
+      <a href="#victim4"><div id='murderContainer'><img src="images/victims/MaryAnnNichols/dead.png">Mary Ann Nichols<p>Address: Durward Street</p></div></a>
+      <a href="#victim5"><div id='murderContainer'><img src="images/victims/MaryJaneKelly/dead.png">Mary Jane Kelly<p>Address: 13 Miller's Court</p></div></a>
+      <div id='murderContainer2'><br><br><img src="images/basic/victim.png"></div>
+    </div>
+
+  
+  </div>
   <div data-role="footer">
     <h1>&copy; Group One</h1>
   </div>
   
     <div data-role="panel" id="navpanelPOI" data-position-fixed="true">
-		<ul data-role="listview">
-		<div data-mini="true" class="ui-input-search">
-			<input data-mini="true" placeholder="Search"> </input>
-		</div>
-			<li><a href="#poimap">Home</a></li>
-			<li><a href="#rules">Rules</a></li>
-			<li><a href="#favourites">Favourites</a></li>
-			<li><a href="#newsletter">Newsletter</a></li>
-			<li><a href="#booking">Booking</a></li>
-		</ul>
-	</div><!-- /panel -->
+    <ul data-role="listview">
+    <div data-mini="true" class="ui-input-search">
+      <input data-mini="true" placeholder="Search"> </input>
+    </div>
+      <li><a href="#poimap">Home</a></li>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="#favourites">Favourites</a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+      <li><a href="#booking">Booking</a></li>
+    </ul>
+  </div><!-- /panel -->
+  
   
 </div><!-- Closing POI Page -->
 
