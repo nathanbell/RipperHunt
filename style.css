@@ -51,13 +51,13 @@
 .murderVictimHeader{
 	background-image: url('images/basic/button.png');
 	background-size: 100% 100%;
-	width: 30%;
+	width: 40%;
 	height: 10%;
 	margin: 0 auto;
 }
 
 .murderVictimHeader p{
-	padding: 10px 10px 10px 10px;
+	
 	font-size: 40px;
 	color: black;
 	text-align: center;
@@ -169,4 +169,8 @@
 
   #sizeofpiece{
     height: 760px;
+  }
+
+  #policeStation{
+    float: right;
   }
