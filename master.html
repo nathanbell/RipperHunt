@@ -363,12 +363,10 @@
   <div role="main" class="ui-content">
 
   <h1>Murder Victim 1</h1>
-<p> information about item </p>
-			
-			<a href="#victim2" class="ui-btn ui-btn-a ui-btn-inline"> Item2</a>
-			<a href="#favourites" class="ui-btn ui-btn-a ui-btn-inline" onClick="fav();"> Favourites</a>
-			<input type="checkbox" id="favourite1">
-			<label for="favourite1"> Add to Fav</label>
+<p id='Algor'>PITCHWHATEEL</p>
+  <p>What is the answer?</p>
+  <input type="text" id="answer">
+  <button type="button" class="clickMe" onclick="calculate()">guess</button>
 
   </div>
   
@@ -547,7 +545,13 @@
   
   <div role="main" class="ui-content">
 
-  <h1>Murder Victim 3</h1>
+  <h1>Murder Clue 3</h1>
+  <p>What is this image? </p>
+  <div id="pannel" ><img src="knifeblur.jpg" height="300" width="300"/> </div>
+<br>
+
+  <input type="text" id="ans"> <br>
+  <button onclick="userGuess()"> Guess</button> <br>
 
 
   </div>
@@ -630,7 +634,7 @@
   
   <div role="main" class="ui-content">
 
-  <h1>Murder Victim 4</h1>
+  <h1>Murder Clue 4</h1>
 
 
   </div>
@@ -998,6 +1002,23 @@ if( $("#favourite5").is(":checked")){
       } 
 
     }
+
+    //Knife game end
+
+    //anagram game
+
+    function calculate(){
+    var answer = document.getElementById("answer").value;
+    if (answer == 'whitechapel') {
+      console.log('Correct');
+      alert("Correct");
+    }else{
+      console.log('incorrect');
+      alert("inCorrect");
+    }
+  };
+
+  //anagram game end
 
 
 
