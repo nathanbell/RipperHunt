@@ -65,7 +65,7 @@
 }
 	
   .parchmentContainer{
-  	width: 85%;
+  	width: 92%;
   	height: 100%;
   	margin: 0 auto;
   	background-image: url("images/basic/parchment.png");
@@ -119,4 +119,38 @@
     	font-family: "Arial Black", Gadget, sans-serif;
   	padding-top: 25px;
   	padding-left: 20px;
+  }
+
+  .containerMurder{
+    width: 100%;
+    height: 30%;
+    margin: 0 auto;
+  }
+
+  #murderContainer{
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    float: left;
+    display: inline-block;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    text-align: center;
+    color: white;
+
+  }
+
+  #murderContainer img{
+    margin: 1%;
+    width: 98%;
+    display: inline-block;
+    
+  }
+
+  .poipagemugshots{
+    height: 100%;
+  }
+
+  #sizeofpiece{
+    height: 960px;
   }

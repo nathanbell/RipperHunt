@@ -22,6 +22,7 @@
 	<script src="https://checkout.stripe.com/checkout.js"></script>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
   
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
@@ -55,9 +56,11 @@
                     If you need some help, please refer to the rules, where there will be an explanation of how to use the application.</p><br>
                     <p id="informationText">
                     Yours Scincerly,</p><br>
+
+                    <img src="images/basic/signature.png" style="width:120px; padding-left: 50px;" id="signature">
                     <p id="informationText">
                     John Spector, Head of Scotland Yard</p>
-
+                    <br>
                      <p id="informationText"><a href="#poimap">Start Your Investigation</a></p>
             </div>
         </div>
@@ -89,24 +92,21 @@
 	<a href="#navpanelPOI" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
 	
   </div>
-  <div role="main" class="ui-content">
+  <div role="main" class="ui-content poipagemugshots">
     <h2>Select a murder scene</h2>
 
-    <div class="brickWallContainer">
+    <div class="brickWallContainer" id="sizeofpiece">
     	
-    <div class="mapBackground"></div>
-
+    <div class="containerMurder">
+      <a href="#victim1"><div id='murderContainer'><img src="images/victims/AnnChapman/dead.png">Ann Chapman<p>Address:</p></div>
+      <a href="#victim2"><div id='murderContainer'><img src="images/victims/CatherineEddowes/dead.png">Catherine Eddowes<p>Address:</p></div>
+      <a href="#victim3"><div id='murderContainer'><img src="images/victims/ElizabethStride/dead.png">Elizabeth Stride<p>Address:</p></div>
     </div>
-	
-	<div id="poilinksmap">
-	
-		<a href="#victim1">Murder Scene One</a>
-		<a href="#victim2"> Murder Scene Two</a>
-		<a href="#victim3">Murder Scene Three</a>
-		<a href="#victim4">Murder Scene Four</a>
-		<a href="#victim5">Murder Scene Five</a>
-	
-	</div>
+    <div class="containerMurder">
+      <a href="#victim4"><div id='murderContainer'><img src="images/victims/MaryAnnNichols/dead.png">Mary Ann Nichols<p>Address:</p></div>
+      <a href="#victim5"><div id='murderContainer'><img src="images/victims/MaryJaneKelly/dead.png">Mary Jane Kelly<p>Address:</p></div>
+    </div>
+
 	
 	</div>
   <div data-role="footer">
