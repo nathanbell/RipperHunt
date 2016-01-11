@@ -19,6 +19,20 @@
     background-size: 100% 100%;
 
 }
+/*Rules Page*/
+
+.rulesContainer{
+  width: 100%;
+  height: 100%;
+}
+
+.rulesImage{
+  height: 95%;
+  width: 100%;
+  margin: 0 auto;
+  
+
+}
 
 /*Text Styling*/
 
