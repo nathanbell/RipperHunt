@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>POI - Anna Chapman</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <style>
+    body {
+        background-image: url("images/basic/background.jpg");
+        background-size: cover;
+    }
+    
+    .slider-nav h1 {
+        display: inline-block;
+        width: 100%;
+        height: 80px;
+    }
+    
+    .slider-nav .slick-slide {
+        height: 100px;
+        color: #000;
+        background: white;
+        text-align: center;
+        margin: 20px 10px 15px 0px;
+
+    }
+    
+    .slider-for {
+        background-color: white;
+        width: 90%;
+        height: 40%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+      .brickWallContainer{
+        width: 75%;
+        margin: 0 auto;
+        
+        background-image: url("images/basic/wall.jpg");
+        background-size:cover;
+        padding-top: 10px;
+        border-style: solid;
+        border-color: #460702;
+  }
+
+  .parchmentContainer{
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url("images/basic/parchment.png");
+    background-size:cover;
+  }
+
+    .parchmentContainer h1{
+  padding: 40px 40px 0px 40px;
+
+  }
+    .parchmentContainer p{
+  padding: 5px 45px 0px 45px;
+
+  }
+    .buttonBackground{
+    width: 250px;
+    height: 10%;
+    margin: 0 auto;
+    background-image: url("images/basic/button.png");
+    background-repeat: no-repeat;
+  }
+    .buttonBackground p{
+      font-size: 18px;
+      font-family: "Arial Black", Gadget, sans-serif;
+    padding-top: 25px;
+    padding-left: 20px;
+  }
+
+    </style>
+</head>
+
+<body>
+    <div class="brickWallContainer">
+    <div class="buttonBackground"><p>Anne Chapman</p></div>
+        <div class="slider-for">
+            <div>
+                <h1>1</h1></div>
+            <div>
+                <h1>2</h1></div>
+            <div>
+                <h1>3</h1></div>
+            <div>
+                <h1>4</h1></div>
+            <div>
+                <h1>5</h1></div>
+        </div>
+        <div class="slider-nav">
+            <div>
+                <h1>1</h1></div>
+            <div>
+                <h1>2</h1></div>
+            <div>
+                <h1>3</h1></div>
+            <div>
+                <h1>4</h1></div>
+            <div>
+                <h1>5</h1></div>
+        </div>
+    </div>
+    <div class="parchmentContainer">
+  <h1>Anne Chapman</h1> 
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            centerMode: true,
+            arrows: false,
+            focusOnSelect: true
+        });
+    });
+    </script>
+</body>
+
+</html>

@@ -196,10 +196,9 @@
     
   }
 
-  #address{
-    
+  #mapIcon{
+    float: right;
   }
-
   .poipagemugshots{
     height: 100%;
   }
@@ -213,3 +212,29 @@
     width: 30%;
     height: auto;
   }
+
+  #favouriteRadio1, #favouriteRadio2, #favouriteRadio3, #favouriteRadio4, #favouriteRadio5{
+    width: 35px;
+    height: 25px;   
+  } 
+
+  #pannel {
+    width: 100%;
+    height: auto;
+  }
+
+  #pannel img{
+    margin-left: 30%;
+  }
+
+
+#imgContainer{
+  width: 100%;
+  height: auto;
+}
+#newsletterImg{
+  width: 70%;
+  height: 70%;
+  margin-left: 15%;
+
+}

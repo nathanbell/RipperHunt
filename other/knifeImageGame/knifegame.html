@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>KNIFE GAME</title>
+</head>
+<body>
+	<p>what is this image </p>
+	<div id="pannel" ><img src="knifeblur.jpg" height="300" width="300"/> </div>
+<br>
+
+	<input type="text" id="ans"> <br>
+	<button onclick="userGuess()"> Guess</button> <br>
+
+
+	<script>
+
+		function userGuess(){
+
+			 var ans = document.getElementById('ans').value;
+
+			if (ans == "knife") {
+    			document.getElementById("pannel").innerHTML = '<img src="knife.jpg" height="300" width="300""/>';
+				alert("correct");
+
+				//change image pixels, only made it smaller to test.
+
+			}
+			else{
+				alert("wrong");
+			}	
+
+
+
+
+
+
+
+
+
+		}
+
+
+
+	</script>
+
+
+</body>
+</html>

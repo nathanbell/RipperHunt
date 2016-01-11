@@ -1,0 +1,1027 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ripper Street</title>
+    
+    <!-- <link rel="stylesheet" type="text/css" href="css/alexstyle.css"> -->
+    <link rel="stylesheet" href="css/ripper.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="alexstyle.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
+    <!-- Scripts for Fotorama -->
+    <link href="css/fotorama.css" rel="stylesheet">
+    <script src="js/fotorama.js"></script>
+    
+
+
+
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <div class="background">
+            <div data-role="header" data-position="fixed" class="navheader">
+                <h1>Ripper Hunt</h1>
+                <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+            </div>
+            <div role="main" class="ui-content">
+                <div class="topSection">
+                    <div class="logoSection"><img src="images/basic/logo.png"></div>
+                    <div class="rulesSection"></div>
+                </div>
+                <div class="mainBody">
+                    
+                    <p id="informationText">Dear Investigator,</p>
+                    <br>
+                    <p id="informationText">
+                        We are in need of your help, thank you for answering the job notice. You will transport back into the 1800's as a dectective to help solve the case of Jack the Ripper. You will be trvael to the murder sites where you will be asked to solve clues. With all clues solved, maybe it will be possible to solve the case! Please be aware that this will take hard work and determination.</p><br>
+                    <p id="informationText">
+                        We wish you well in your investigation, and you have full support of Scotland Yard behind you.</p><br>
+                    <p id="informationText">
+                        If you need some help, please refer to the rules, where there will be an explanation of how to use the application.</p><br>
+                    
+                    <p id="informationText">
+                        Yours Scincerly,<a href="#poimap"><img id="policeStation" src="images/basic/badge.png"></a></p>
+                    
+                    <img src="images/basic/signature.png" style="width:120px; padding-left: 50px;" id="signature">
+
+                    <p id="informationText">
+                        John Spector, Head of the Metropolitian Police</p>
+                    <br>
+                    <p id="informationText">Click on the badge to Start Your Investigation</p>
+                </div>
+            </div>
+            <div data-role="footer">
+                <h1>&copy; Group One</h1>
+            </div>
+            <div data-role="panel" id="navpanel" data-position-fixed="true">
+                <ul data-role="listview">
+                    <div data-mini="true" class="ui-input-search">
+                        <input data-mini="true" placeholder="Search"> </input>
+                    </div>
+                    <li><a href="#poimap">Home</a></li>
+                    <li><a href="#rules">Rules</a></li>
+                    <li><a href="#favourites">Favourites</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Closing Home Page -->
+    <!-- Opening POI Main Navigation Menu Page -->
+    <div data-role="page" id="poimap">
+    <div class="background">
+        <div data-role="header" data-position="fixed">
+            <h1>POI Hub</h1>
+            <a href="#navpanelPOI" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+        </div>
+        <div role="main" class="ui-content poipagemugshots">
+            <div class="brickWallContainer" id="sizeofpiece">
+                <div class="parchmentThin"><h3 style="text-align:center;">Work your way through the murders....</h3></div>
+                <a href="#victim1">
+                    <div class ="murderContainer"><img src="images/victims/MaryAnnNichols/dead.png">Mary Ann Nichols
+                        <p id="address">Address: Durward Street </p>
+                    </div>
+                </a>
+                <a href="#victim2">
+                    <div class='murderContainer' id='annChapman'><img src="images/victims/AnnChapman/dead.png">Ann Chapman
+                        <p id="address">Address: Hanbury Street</p>
+                    </div>
+                </a>
+                <a href="#victim3">
+                    <div class='murderContainer' id='elizabethStride'><img src="images/victims/ElizabethStride/dead.png">Elizabeth Stride
+                        <p id="address">Address: Dutfield's Yard</p>
+                    </div>
+                </a>
+                <a href="#victim4">
+                    <div class='murderContainer' id='catherineEddowes'><img src="images/victims/CatherineEddowes/dead.png">Catherine Eddowes
+                        <p id="address">Address: Mitre Square</p>
+                    </div>
+                </a>
+                <a href="#victim5">
+                    <div class='murderContainer' id='maryJane'><img src="images/victims/MaryJaneKelly/dead.png">Mary Jane Kelly
+                        <p id="address">Address: Miller's Court</p>
+                    </div>
+                </a>
+                <div id='murderContainer2'>
+                    <br>
+                    <br><img src="images/basic/victim.png"></div>
+            </div>
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanelPOI" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+        </div>
+    </div>
+    </div>
+    <!-- Opening Rules Page -->
+    <div data-role="page" id="rules">
+    <div class="background">
+        <div data-role="header" data-position="fixed">
+            <h1>Rules</h1>
+            <a href="#navpanelrules" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+
+        </div>
+        <div role="main" class="ui-content">
+        <div class="rulesContainer"><img class="rulesImage" src="images/basic/rules.jpg"></div>
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanelrules" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+        </div>
+    </div>
+    <!-- Closing Rules Page -->
+    <!-- Opening Favourites Page -->
+    <div data-role="page" id="favourites">
+    <div class="background">
+        <div data-role="header" data-position="fixed">
+            
+            <a href="#navpanelfav" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+        </div>
+        <div role="main" class="ui-content">
+            <p>My Favourites</p>
+              <div class="parchmentContainer">
+                <h1>Favourites</h1>
+                
+                <div id="favourite-content">No Favourites</div>
+            <div id="clearfav" class="ui-btn ui-btn-a ui-btn-inline" onClick="fav();"> clear</div>
+            </div>
+            
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanelfav" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+      
+        </div>
+    </div>
+    <!-- Closing Favourites Page -->
+    <!-- Opening Newsletter Page -->
+    <div data-role="page" id="newsletter">
+    <div class="background">
+        <div data-role="header" data-position="fixed">
+            <h1>Newsletter</h1>
+            <a href="#navpanelnews" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+        </div>
+        <div role="main" class="ui-content">
+            <form>
+                <label for="basic">Name:</label>
+                <input type="text" name="name" id="basic" value="" data-mini="true" />
+                <label for="basic">Email:</label>
+                <input type="email" name="name" id="basic" value="" data-mini="true" />
+                <label for="basic">Do you agree to the terms and conditions:</label>
+                <select name="tandc" id="tandcslider" data-role="slider" data-mini="true" />
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+                </select>
+            </form>
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanelnews" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+        </div>
+    </div>
+    <!-- Closing Newsletter Page -->
+    <!-- Opening Bookings Page -->
+    <div data-role="page" id="booking">
+    <div class="background">
+        <div data-role="header" data-position="fixed">
+            <h1>Booking</h1>
+            <a href="#navpanelbooking" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+        </div>
+        <div role="main" class="ui-content">
+            <form id="frmBooking" name="bookingForm" action="post">
+                Number of People:
+                <input onblur="findTotal()" id="qty" name="qty" type="text" value="" /> Price £:
+                <input id="price" name="price" type="text" value="5" readonly> Total Price £:
+                <input id="total" name="total" type="text" value="" readonly> Date:
+                <input type="text" id="datepicker">
+                <br>
+                <button id="customButton">Purchase</button>
+                <label for="basic">Do you agree to the terms and conditions:</label>
+                <select name="tandc" id="tandcslider" data-role="slider" data-mini="true" />
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+                </select>
+            </form>
+            <div align="center" id="thankyouPayment"></div>
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanelbooking" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+        </div>
+    </div>
+    <!-- Closing booking Page -->
+    <!-- POI Pages are below -->
+    <!--################################################ VICTIM 1 PAGE ##############################################-->
+    <!-- Opening Victim 1 -->
+    <div data-role="page" id="victim1">
+    <div class="background">
+        <div data-role="header" data-position="fixed" class="navheader">
+            <h1>Mary Ann Nichols</h1>
+            <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="murderVictimHeader">
+                <p>Mary Ann Nichols</p>
+            </div>
+            <div class="brickWallContainer">
+                <div class="fotorama" data-nav="thumbs">
+                    <img src="images/victims/MaryAnnNichols/NicholsDiscovery.jpg">
+                    <img src="images/victims/MaryAnnNichols/NicholsDeathCert.jpg">
+                    <img src="images/victims/MaryAnnNichols/MANichols.jpg">
+                    <img src="images/victims/MaryAnnNichols/location.jpg">
+                    <img src="images/victims/MaryAnnNichols/newlocation.jpg">
+                    <img src="images/victims/MaryAnnNichols/location2.jpg">
+                    <img src="images/victims/MaryAnnNichols/newlocation2.jpg">
+                    <img src="images/victims/MaryAnnNichols/MNGrave.jpg">
+                    <img src="images/victims/MaryAnnNichols/grave.jpg">
+                </div>
+            </div>
+            <div class="parchmentContainer">
+                <iframe id="youtubeVideo" src="https://www.youtube.com/embed/KIeOV_ZhE5s" frameborder="0" allowfullscreen></iframe>
+                <p id="informationText">The body of Mary Ann “Polly” Nichols was discovered in the wee morning hours of August 31, 1888, at about 3:40am by 2 carmen on their way to work. Her body was found in front of a gated horse stable entrance on Buck’s Row, Whitechapel. The two men who happened upon her, Charles Cross and Robert Paul, saw Polly lying on the ground with her skirts pulled up to her waist. At first they weren’t sure if she was either passed out drunk or dead, but after some hesitation they approached her and felt her hands and face, which were both cold to the touch. Feeling very uneasy about what they had just stumbled upon, both men hurried off to alert the first constable they could find.</p>
+                <p id="informationText">Minutes later she was discovered by PC John Neil while passing through Buck’s Row while on his nightly beat. He shone his lantern on Polly’s body which revealed her lifeless eyes staring up into the night sky. Her throat had been deeply severed in two locations – nearly decapitating her – and her lower abdomen partially ripped open by a deep, jagged wound. The killer had also made several other incisions in her abdomen with the same knife. The doctor who had arrived at the scene to examine her body had deemed her time of death to be less than 30 minutes from the time she’d been found.<a href="map.html" rel="external"><img src="images/basic/pointer.png" id="mapIcon" style="width:120px;"></a>
+                </p>
+                <p id="informationText"><a href="#victim1p2">Continue to solve the clue</a></p>
+                <input type="checkbox" id="favourite1" onChange="fav();">
+                <label for="favourite1" id="favouriteRadio1">Fav</label>
+            </div>
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanel" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+        </div>
+    </div>
+    <!-- Closing Victime 1 Page -->
+    <!--################################################ VICTIM 1 PAGE 2 ##############################################-->
+    <!-- Opening Victim 1 -->
+    <div data-role="page" id="victim1p2">
+    <div class="background">
+        <div data-role="header" data-position="fixed" class="navheader">
+            <h1>Mary Ann Nichols</h1>
+            <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+        </div>
+        <div role="main" class="ui-content">
+            <h1 style="text-align: center;">Murder Clue 1</h1>
+            <p style="text-align: center;">Can You Guess This Algorithm?</p>
+            <p id='Algor' style="text-align: center; color:red; font-size: 2em;">PITCHWHATEEL</p>
+            <input type="text" id="answer">
+            <button type="button" class="clickMe" onclick="calculate()">guess</button>
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanel" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+        </div>
+    </div>
+    <!-- Closing Victime 1 Page -->
+    <!--################################################ VICTIM 2 PAGE ##############################################-->
+    <!-- Opening Victim 2 -->
+    <div data-role="page" id="victim2">
+    <div class="background">
+        <div data-role="header" data-position="fixed" class="navheader">
+            <h1>Annie Chapman</h1>
+            <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+        </div>
+        <div role="main" class="ui-content mainBackground">
+            <div class="murderVictimHeader">
+                <p>Annie Chapman</p>
+            </div>
+            <!-- 2. Add images to <div class="fotorama"></div>. -->
+            <div class="brickWallContainer">
+                <div class="fotorama" data-nav="thumbs">
+                <img src="images/victims/AnnChapman/chapman.jpg">
+                    <img src="images/victims/AnnChapman/murder.jpg">
+                    <img src="images/victims/AnnChapman/backdoor.jpg">
+                    <img src="images/victims/AnnChapman/spitalfields.jpg">
+                    <img src="images/victims/AnnChapman/chapman2.jpg">
+                    <img src="images/victims/AnnChapman/DCchapman.jpg">
+                    <img src="images/victims/AnnChapman/passage.jpg">
+                    <img src="images/victims/AnnChapman/grave.jpg">
+                </div>
+            </div>
+            <div class="parchmentContainer">
+                <iframe id="youtubeVideo" src="https://www.youtube.com/embed/GPh7r-SPTto" frameborder="0" allowfullscreen></iframe>
+                <p id="informationText">A witness had reported seeing Annie Chapman talking with a man outside 29 Hanbury Street, Spitalfields, 5:30am the morning of her murder. Albert Cadosch, who lived at 27 Hanbury Street, reported hearing a woman in the next door backyard say “No”, followed by what sounded like a body falling against the fence. Approximately twenty minutes later, her badly mutilated body was found by carter John Davis near a doorway in the back yard of 29 Hanbury Street.</p>
+                <p id="informationText">Her throat had been cut in much the same manner as Mary Ann Nichols had been slashed, and her abdomen ripped entirely open. Her intestines, torn out and still attached, had been placed over her right shoulder. A later autopsy revealed that the killer had removed her uterus and parts of her vagina.<a href="map.html" rel="external"><img src="images/basic/pointer.png" id="mapIcon" style="width:120px;"></a>
+                </p>
+                <p id="informationText"><a href="#victim2p2">Continue to solve the clue</a></p>
+                <input type="checkbox" id="favourite2" onChange="fav();">
+                <label for="favourite2" id="favouriteRadio2">Fav</label>
+            </div>
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanel" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+        </div>
+    </div>
+    <!-- Closing Victime 2 Page -->
+    <!--################################################ VICTIM 2 PAGE 2 ##############################################-->
+    <div data-role="page" id="victim2p2">
+    <div class="background">
+        <div data-role="header" data-position="fixed" class="navheader">
+            <h1>Annie Chapman</h1>
+            <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+        </div>
+        <div role="main" class="ui-content">
+            <h1>Murder Clue 2</h1>
+            <!-- FORM FOR GUESS THE RIDDLE GAME -->
+            <form action="" method="post" id="guess_form">
+                <label for="guess_word">Question: Annie Chapman was murdered on _________ Street?</label>
+                <input type="text" id="guess_word" />
+                <br />
+                <input type="submit" value="Guess!" id="submit_form" />
+                <span id="total_guesses">Guesses: 3</span>
+                <span id="words_guessed"></span>
+            </form>
+            <!-- FORM FOR GUESS THE RIDDLE CLOSE -->
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanel" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+        </div>
+    </div>
+    <!--################################################ VICTIM 3 PAGE ##############################################-->
+    <!-- Opening Victim 3 -->
+    <div data-role="page" id="victim3">
+    <div class="background">
+        <div data-role="header" data-position="fixed" class="navheader">
+           <h1>Elizabeth Stride</h1>
+            <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="murderVictimHeader">
+                <p>Elizabeth Stride</p>
+            </div>
+            <div class="brickWallContainer">
+                <div class="fotorama" data-nav="thumbs">
+                    
+                    <img src="images/victims/ElizabethStride/ElizabethStrideMortuary.jpg">
+                    <img src="images/victims/ElizabethStride/Diemschutz_discovery.jpg">
+                    <img src="images/victims/ElizabethStride/StrideDC.jpg">
+                    <img src="images/victims/ElizabethStride/found.jpg">
+                    <img src="images/victims/ElizabethStride/yard.jpg">
+                    <img src="images/victims/ElizabethStride/grave.jpg">
+                    <img src="images/victims/ElizabethStride/StrideGrave.jpg">
+                </div>
+            </div>
+            <div class="parchmentContainer">
+                <iframe id="youtubeVideo" src="https://www.youtube.com/embed/nz5EfxPIvBc" frameborder="0" allowfullscreen></iframe>
+                <p id="informationText">The Ripper would claim two victims in the early morning hours of September 30, 1888; the first of which was Elizabeth Stride. Her body was discovered in Dutfield’s Yard, off Berner Street, at approximately 1am. The killer had cut her throat, severing her left artery, yet no other slashes or incisions had been made. </p>
+                <p id="informationText">Because of the absence of abdominal mutilations, there has been some doubt as to whether or not Stride was in fact killed by Jack the Ripper. However, most experts agree that Stride was murdered by the same killer due to the nature in which her throat had been cut. </p>
+                <p id="informationText">It’s also believed that the reason Stride had not been mutilated like the others was due to an interruption of some sort. It’s possible the killer feared he was in jeopardy of being detected by nearby witnesses and elected to flee before finishing his ritual.<a href="map.html" rel="external"><img src="images/basic/pointer.png" id="mapIcon" style="width:120px;"></a>
+                </p>
+                <p id="informationText"><a href="#victim3p2">Continue to solve the clue</a></p>
+                <input type="checkbox" id="favourite3" onChange="fav();">
+                <label for="favourite3" id="favouriteRadio3">Fav</label>
+            </div>
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanel" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+        </div>
+    </div>
+    <!-- Closing Victime 3 Page -->
+    <!--################################################ VICTIM 3 PAGE 2 ##############################################-->
+    <div data-role="page" id="victim3p2">
+    <div class="background">
+        <div data-role="header" data-position="fixed" class="navheader">
+            <h1>Elizabeth Stride</h1>
+            <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+        </div>
+        <div role="main" class="ui-content">
+            <h1 style="text-align:center;">Murder Clue 3</h1>
+            <p style="text-align:center;">What is this image? </p>
+            <div id="pannel"><img src="images/basic/knifeblur.jpg" height="300" width="300" id="knifeImage" /> </div>
+            <br>
+            <input type="text" id="ans">
+            <br>
+            <button onclick="userGuess()"> Guess</button>
+            <br>
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanel" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+        </div>
+    </div>
+    //
+    <!--################################################ VICTIM 4 PAGE ##############################################-->
+    <div data-role="page" id="victim4">
+    <div class="background">
+        <div data-role="header" data-position="fixed" class="navheader">
+            <h1>Catherine Eddowes</h1>
+            <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="murderVictimHeader">
+                <p>Catherine Edowes</p>
+            </div>
+            <div class="brickWallContainer">
+                <div class="fotorama" data-nav="thumbs">
+                <img src="images/victims/CatherineEddowes/Catherine_Eddowes.jpg">
+                    <img src="images/victims/CatherineEddowes/EddowesGrave.jpg">
+                    <img src="images/victims/CatherineEddowes/EddowesMortuary.jpg">
+                    <img src="images/victims/CatherineEddowes/mitre.jpg">
+                    <img src="images/victims/CatherineEddowes/street.jpg">
+                    <img src="images/victims/CatherineEddowes/station.jpg">
+                    
+                </div>
+            </div>
+            <div class="parchmentContainer">
+                <iframe id="youtubeVideo" src="https://www.youtube.com/embed/saCYBgujaFU" frameborder="0" allowfullscreen></iframe>
+                <p id="informationText">Forty five minutes after Stride’s body was found in Dutfield’s Yard, Eddowes’ body was discovered in Mitre Square, within the City of London. Eddowes’ throat had been severed and her abdomen torn open with a deep, jagged wound. Her left kidney had been removed, along with a major portion of her uterus. Catherine Eddowes was lying on her back in a pool of blood, with her clothes thrown up over her waist.</p>
+                <p id="informationText">The Stride and Eddowes murders were later referred to as the “Double Event“.<a href="map.html" rel="external"><img src="images/basic/pointer.png" id="mapIcon" style="width:120px;"></a>
+                </p>
+                <p id="informationText"><a href="#victim4p2">Continue to solve the clue</a></p>
+                <input type="checkbox" id="favourite4" onChange="fav();">
+                <label for="favourite4" id="favouriteRadio4">Fav</label>
+            </div>
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanel" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+        </div>
+    </div>
+    <!--################################################ VICTIM 4 PAGE 2 ##############################################-->
+    <!-- Closing Victime 4 Page -->
+    <div data-role="page" id="victim4p2">
+    <div class="background">
+        <div data-role="header" data-position="fixed" class="navheader">
+            <h1>Catherine Eddowes</h1>
+            <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+        </div>
+        <div role="main" class="ui-content">
+            <h1>Murder Clue 4</h1>
+              <p>what year did Jack the Ripper kill his victims??</p>
+  <input type="text" id="yearAns">
+  <button type="button" class="clickMe" onclick="year()">enter</button>
+
+
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanel" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+        </div>
+    </div>
+    <!--################################################ VICTIM 5 PAGE ##############################################-->
+    <div data-role="page" id="victim5">
+    <div class="background">
+        <div data-role="header" data-position="fixed" class="navheader">
+            <h1>Mary Jane Kelly</h1>
+            <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="murderVictimHeader">
+                <p>Mary Jane Kelly</p>
+            </div>
+            <div class="brickWallContainer">
+                <div class="fotorama" data-nav="thumbs">
+                    <img src="images/victims/MaryJaneKelly/Kelly1.jpg">
+                    <img src="images/victims/MaryJaneKelly/whitechapel.jpg">
+                    <img src="images/victims/MaryJaneKelly/KellyDeathCert.jpg">
+                    <img src="images/victims/MaryJaneKelly/MaryKelly.jpg">
+                    <img src="images/victims/MaryJaneKelly/court.jpg">
+                    <img src="images/victims/MaryJaneKelly/millers.jpg">
+                    <img src="images/victims/MaryJaneKelly/scene.jpg">
+                    <img src="images/victims/MaryJaneKelly/grave.jpg">
+                </div>
+            </div>
+            <div class="parchmentContainer">
+                <iframe id="youtubeVideo" src="https://www.youtube.com/embed/MhcpkUnmIlk" frameborder="0" allowfullscreen></iframe>
+                <p id="informationText">Considered to be Jack the Ripper’s Swan Song, Mary Jane Kelly’s murder was the most gruesome of all the Whitechapel Murders. She was found horribly mutilated, lying on the bed in her single room flat where she lived at 13 Miller’s Court, off Dorset Street, Spitalfields. She was discovered at 10:45am on the morning of Friday, November 9, 1888.</p>
+                <p id="informationText">The landlord’s assistant, Thomas Bowyer, had been sent over to collect the rent, which she had been weeks behind in paying. When she didn’t answer his knock at the door, Bowyer reach his hand through a crack in the window, pushing aside a coat being used as makeshift drapery. What he saw at that moment was absolutely horrific.</p>
+                <p id="informationText">Kelly’s body was mutilated beyond recognition. Her entire abdominal cavity had been emptied out, her breasts cut off, and her viscera had been deliberately placed beneath her head and on the bedside table. Kelly’s face had been hacked away and her heart removed, which was also absent from the crime scene. Kelly’s murder was by far the most grisly and ritualistic of all.<a href="map.html" rel="external"><img src="images/basic/pointer.png" id="mapIcon" style="width:120px;"></a></p>
+                <p id="informationText"><a href="#victim5p2">Continue to solve the clue</a></p>
+                <input type="checkbox" id="favourite5" onChange="fav();">
+                <label for="favourite5" id="favouriteRadio5"> Fav</label>
+            </div>
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanel" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+        </div>
+    </div>
+    <!-- Closing Victime 5 Page -->
+    <!--################################################ VICTIM 5 PAGE 2 ##############################################-->
+    <div data-role="page" id="victim5p2">
+      <div class="background">
+        <div data-role="header" data-position="fixed" class="navheader">
+            <h1>Mary Jane Kelly</h1>
+            <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+        </div>
+        <div role="main" class="ui-content">
+            <!-- HTML FOR DRAG AND DROP GAME -->
+            <div id="dandbackground">
+                <span id="drop_score">0 / 3</span>
+                <div id="dd1">
+                    <div data="1" id="makeMeDraggable"> </div>
+                </div>
+                <div id="dd2">
+                    <div data="2" id="makeMeDraggable2"> </div>
+                </div>
+                <div id="dd3">
+                    <div data="3" id="makeMeDraggable3"> </div>
+                </div>
+                <div id="drop1">
+                    <div data="5" id="droppable"> </div>
+                </div>
+            </div>
+            <!-- CLOSING HTML FOR DRAG AND DROP GAME -->
+        </div>
+        <div data-role="footer">
+            <h1>&copy; Group One</h1>
+        </div>
+        <div data-role="panel" id="navpanel" data-position-fixed="true">
+            <ul data-role="listview">
+                <div data-mini="true" class="ui-input-search">
+                    <input data-mini="true" placeholder="Search"> </input>
+                </div>
+                <li><a href="#poimap">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#favourites">Favourites</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </div>
+        <!-- /panel -->
+        </div>
+    </div>
+    <!--################################################ END ##############################################-->
+    <!--################################################ JAVASCRIPT ##############################################-->
+    <script>
+    $(document).ready(function() {
+        var total = 3;
+        var dropscore = 0;
+
+        $(dragGame);
+
+        //All code for Guessing riddle game
+
+        $("#submit_form").on("click", function(e) {
+            var murder = "HANBURY";
+            var guess = $('#guess_word').val();
+
+            guess = guess.toUpperCase();
+
+            //Validate input
+            if (guess == "") {
+                alert("Please enter a guess!");
+            } else {
+                wrongguess(guess);
+                var returned = theguess(murder, guess);
+            }
+
+            //Take the bool returned and display the answer accoringly.
+            if (returned == false) {
+                total--;
+                $("#total_guesses").html("Incorrect! " + total + " guesses left");
+
+                if (total == 0) {
+                    //this.disabled = true;
+                    $("#total_guesses").html("All your guesses are gone! No points scored here!");
+                }
+            } else if (returned == true) {
+                elizabethStride.style.visibility = "visible";
+                alert("Well Done, You Guessed Correct! Goodluck with the next clue!");
+                
+                window.location.href = "#poimap";
+                //this.disabled = true;
+            }
+
+            e.preventDefault();
+        });
+
+        function theguess(murder, guess) {
+            if (murder == guess) {
+                $("#total_guesses").html("Correct!");
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function wrongguess(guess) {
+            var guessarray = [];
+
+            guessarray.push(guess);
+
+            for (var i = 0; i < guessarray.length; i++) {
+                $("#words_guessed").html("<br>Your Last Guess was: " + guessarray.join("<br>"));
+            }
+        }
+
+        function dragGame() {
+            $('#makeMeDraggable').draggable();
+
+            $('#makeMeDraggable2').draggable();
+
+            $('#makeMeDraggable3').draggable();
+
+            $('#droppable').droppable({
+                drop: handleDropEvent
+            });
+        }
+
+        function handleDropEvent(event, ui) {
+
+            var draggable = ui.draggable.data;
+            var getAttribute = ui.draggable.attr('id');
+            var totalClues = 3;
+
+            if (getAttribute == "makeMeDraggable") {
+                dropscore++;
+                ui.draggable.draggable('disable');
+                $("#drop_score").html(dropscore + " / " + totalClues);
+            }
+
+            if (getAttribute == "makeMeDraggable2") {
+                dropscore++;
+                ui.draggable.draggable('disable');
+                $("#drop_score").html(dropscore + " / " + totalClues);
+            }
+
+            if (getAttribute == "makeMeDraggable3") {
+                dropscore++;
+                ui.draggable.draggable('disable');
+                $("#drop_score").html(dropscore + " / " + totalClues);
+            }
+
+            if (dropscore == totalClues) {
+                $("#drop_score").html(dropscore + " / " + totalClues);
+                alert('You have completed your investigation!'+'\n'+'\n'+
+                      'Thank you for your efforts, but we are unable to convict a suspect'+'\n'+'\n'+
+                      'Maybe our tour will help the case?!' )
+                window.location.href = "#home";
+            }
+
+        }
+
+    });
+
+    $(function() {
+        $("#datepicker").datepicker();
+    });
+
+    function findTotal() {
+        var arr = document.getElementsByName('qty');
+        var pri = document.getElementsByName('price');
+
+        var arrV = parseInt(arr.value);
+        var priV = parseInt(arr.value);
+
+        //var tot = arrV * priV;
+        var tot = 0;
+
+        for (var i = 0; i < arr.length; i++) {
+            if (parseInt(arr[i].value))
+                tot += parseInt(arr[i].value) * parseInt(pri[i].value);
+        }
+        document.getElementById('total').value = tot;
+    }
+
+    jQuery(function($) {
+
+        var $form = $('#frmBooking');
+        var handler = StripeCheckout.configure({
+
+            key: 'pk_test_cp21BcECf4kMMUbSlRlZlsMo',
+            token: function(token) {
+
+                if (token.id) {
+                    $("#thankyouPayment").html("Thank you your payment went through");
+                }
+            }
+
+
+        });
+
+
+        $('#customButton').on('click', function(e) {
+            // Open Checkout with further options
+            handler.open({
+                name: 'Demo Site',
+                currency: 'gbp',
+                description: $('#item_name').val(),
+                amount: $('#total').val() * 100
+            });
+            e.preventDefault();
+        });
+
+        // Close Checkout on page navigation
+        $(window).on('popstate', function() {
+            handler.close();
+        });
+    });
+
+
+
+    //FAVOURITES PAGE START
+    function fav() {
+        
+
+        if ($("#favourite1").is(":checked")) {
+
+            var $item1 = $('<a href="#victim1" class="ui-btn ui-btn-a ui-btn-inline">').text("Durward Street");
+
+            $("#favourite-content").empty().append($item1);
+
+        } else {
+            $("#favourite-content").html("");
+        }
+
+        if ($("#favourite2").is(":checked")) {
+            var $item2 = $('<a href="#victim2" class="ui-btn ui-btn-a ui-btn-inline">').text("Hanbury Street");
+
+            $("#favourite-content").append($item2);
+        }
+
+
+
+        if ($("#favourite3").is(":checked")) {
+            var $item3 = $('<a href="#victim3" class="ui-btn ui-btn-a ui-btn-inline">').text("Dutfield’s Yard");
+
+            $("#favourite-content").append($item3);
+
+        }
+
+
+        if ($("#favourite4").is(":checked")) {
+            var $item4 = $('<a href="#victim4" class="ui-btn ui-btn-a ui-btn-inline">').text("Mitre Square");
+
+            $("#favourite-content").append($item4);
+        }
+
+
+        if ($("#favourite5").is(":checked")) {
+            var $item5 = $('<a href="#victim5" class="ui-btn ui-btn-a ui-btn-inline">').text("Dorset Street");
+
+            $("#favourite-content").append($item5);
+        }
+
+
+
+    }
+
+    function clearFav() {
+
+        $("#favourite-content").empty()
+
+    }
+
+    //FAVOURITES PAGE END
+
+    //KNIFE GAME START
+
+    function userGuess() {
+
+        var ans = document.getElementById('ans').value;
+        ans = ans.toUpperCase();
+
+        if (ans == "KNIFE") {
+            document.getElementById("pannel").innerHTML = '<img src="images/basic/knife.jpg" height="300" width="300""/>';
+            alert("Well Done, You Guessed Correct! Goodluck with the next clue!");
+            catherineEddowes.style.visibility = "visible" ;
+            window.location.href = "#poimap";
+
+        } else {       
+            alert("Sorry this answer is incorrect! Try Again!");
+        }
+
+    }
+
+    //Knife game end
+
+    //anagram game
+
+    function calculate() {
+        var answer = document.getElementById("answer").value;
+        answer = answer.toUpperCase();
+        if (answer == 'WHITECHAPEL') {
+            
+            alert("Well Done, You Guessed Correct! Goodluck with the next clue!");
+            annChapman.style.visibility = "visible" ;
+            window.location.href = "#poimap";
+        } else {
+            
+            alert("Sorry this answer is incorrect! Try Again!");
+        }
+    };
+
+      function year(){
+    var answer = document.getElementById("yearAns");
+    var ansI = parseInt(answer.value);
+    //var arrV = parseInt(arr.value);
+    if (ansI == '1888') {
+      console.log('Correct');
+      alert("Well Done, You Guessed Correct! Goodluck with the next clue!");
+      maryJane.style.visibility = "visible";
+      window.location.href = "#poimap";
+
+    }else{
+      
+      alert("Sorry this answer is incorrect! Try Again!");
+    }
+  };
+
+    //anagram game end
+    </script>
+</body>
+
+</html>
