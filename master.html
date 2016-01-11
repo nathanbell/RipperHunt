@@ -26,6 +26,7 @@
     <!-- Scripts for Fotorama -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
 </head>
 
 <body>
@@ -45,20 +46,21 @@
                     <p id="informationText">Dear Investigator,</p>
                     <br>
                     <p id="informationText">
-                        We are in need of your help, thank you for answering the job notice. You will transport back into the 1800's as a dectective to help solve the case of Jack the Ripper. You will be trvael to the murder sites where you will be asked to solve clues. With all clues solved, maybe it will be possible to solve the case! Please be aware that this will take hard work and determination.</p>
+                        We are in need of your help, thank you for answering the job notice. You will transport back into the 1800's as a dectective to help solve the case of Jack the Ripper. You will be trvael to the murder sites where you will be asked to solve clues. With all clues solved, maybe it will be possible to solve the case! Please be aware that this will take hard work and determination.</p><br>
                     <p id="informationText">
-                        We wish you well in your investigation, and you have full support of Scotland Yard behind you.</p>
+                        We wish you well in your investigation, and you have full support of Scotland Yard behind you.</p><br>
                     <p id="informationText">
-                        If you need some help, please refer to the rules, where there will be an explanation of how to use the application.</p>
-                    <br>
+                        If you need some help, please refer to the rules, where there will be an explanation of how to use the application.</p><br>
+                    
                     <p id="informationText">
-                        Yours Scincerly,<img id="policeStation" src="images/basic/badge.png"></p>
-                    <br>
+                        Yours Scincerly,<a href="#poimap"><img id="policeStation" src="images/basic/badge.png"></a></p>
+                    
                     <img src="images/basic/signature.png" style="width:120px; padding-left: 50px;" id="signature">
+
                     <p id="informationText">
                         John Spector, Head of the Metropolitian Police</p>
                     <br>
-                    <p id="informationText"><a href="#poimap">Start Your Investigation</a></p>
+                    <p id="informationText">Click on the badge to Start Your Investigation</p>
                 </div>
             </div>
             <div data-role="footer">
@@ -82,12 +84,12 @@
     <!-- Opening POI Main Navigation Menu Page -->
     <div data-role="page" id="poimap">
         <div data-role="header" data-position="fixed">
-            <h1>POI Map</h1>
+            <h1>POI Hub</h1>
             <a href="#navpanelPOI" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
         </div>
         <div role="main" class="ui-content poipagemugshots">
             <div class="brickWallContainer" id="sizeofpiece">
-                <h3 style="text-align:center;">Start Your Investigation</h3>
+                <div class="parchmentThin"><h3 style="text-align:center;">Work your way through the murders....</h3></div>
                 <a href="#victim1">
                     <div id='murderContainer'><img src="images/victims/MaryAnnNichols/dead.png">Mary Ann Nichols
                         <p id="address">Address: Durward Street </p>
@@ -276,7 +278,7 @@
     <!-- Opening Victim 1 -->
     <div data-role="page" id="victim1">
         <div data-role="header" data-position="fixed" class="navheader">
-            <
+            <h1>Mary Ann Nichols</h1>
             <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
         </div>
         <div role="main" class="ui-content">
@@ -285,9 +287,15 @@
             </div>
             <div class="brickWallContainer">
                 <div class="fotorama" data-nav="thumbs">
-                    <img src="images/victims/AnnChapman/chapman.jpg">
-                    <img src="images/victims/AnnChapman/chapman2.jpg">
-                    <img src="images/victims/AnnChapman/DCchapman.jpg">
+                    <img src="images/victims/MaryAnnNichols/NicholsDiscovery.jpg">
+                    <img src="images/victims/MaryAnnNichols/NicholsDeathCert.jpg">
+                    <img src="images/victims/MaryAnnNichols/MANichols.jpg">
+                    <img src="images/victims/MaryAnnNichols/location.jpg">
+                    <img src="images/victims/MaryAnnNichols/newlocation.jpg">
+                    <img src="images/victims/MaryAnnNichols/location2.jpg">
+                    <img src="images/victims/MaryAnnNichols/newlocation2.jpg">
+                    <img src="images/victims/MaryAnnNichols/MNGrave.jpg">
+                    <img src="images/victims/MaryAnnNichols/grave.jpg">
                 </div>
             </div>
             <div class="parchmentContainer">
@@ -317,19 +325,18 @@
             </ul>
         </div>
         <!-- /panel -->
-        <script src="slick/slick.js"></script>
-        <script src="js/slickk.js"></script>
+
     </div>
     <!-- Closing Victime 1 Page -->
     <!--################################################ VICTIM 1 PAGE 2 ##############################################-->
     <!-- Opening Victim 1 -->
     <div data-role="page" id="victim1p2">
         <div data-role="header" data-position="fixed" class="navheader">
-            <h1>Victim 1</h1>
+            <h1>Mary Ann Nichols</h1>
             <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
         </div>
         <div role="main" class="ui-content">
-            <h1>Murder Victim 1</h1>
+            <h1>Murder Clue 1</h1>
             <p id='Algor'>PITCHWHATEEL</p>
             <p>What is the answer?</p>
             <input type="text" id="answer">
@@ -357,7 +364,7 @@
     <!-- Opening Victim 2 -->
     <div data-role="page" id="victim2">
         <div data-role="header" data-position="fixed" class="navheader">
-            
+            <h1>Annie Chapman</h1>
             <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
         </div>
         <div role="main" class="ui-content mainBackground">
@@ -367,13 +374,19 @@
             <!-- 2. Add images to <div class="fotorama"></div>. -->
             <div class="brickWallContainer">
                 <div class="fotorama" data-nav="thumbs" data-width="30%" data-ratio="800/600">>
-                    <img src="images/victims/CatherineEddowes/Catherine_Eddowes.jpg">
-                    <img src="images/victims/CatherineEddowes/EddowesGrave.jpg">
-                    <img src="images/victims/CatherineEddowes/EddowesMortuary.jpg">
+                    
+                    <img src="images/victims/AnnChapman/chapman.jpg">
+                    <img src="images/victims/AnnChapman/chapman2.jpg">
+                    <img src="images/victims/AnnChapman/DCchapman.jpg">
+                    <img src="images/victims/AnnChapman/backdoor.jpg">
+                    <img src="images/victims/AnnChapman/murder.jpg">
+                    <img src="images/victims/AnnChapman/passage.jpg">
+                    <img src="images/victims/AnnChapman/spitalfields.jpg">
+                    <img src="images/victims/AnnChapman/grave.jpg">
                 </div>
             </div>
             <div class="parchmentContainer">
-                <iframe id="youtubeVideo" src="https://www.youtube.com/embed/saCYBgujaFU" frameborder="0" allowfullscreen></iframe>
+                <iframe id="youtubeVideo" src="https://www.youtube.com/embed/GPh7r-SPTto" frameborder="0" allowfullscreen></iframe>
                 <p id="informationText">A witness had reported seeing Annie Chapman talking with a man outside 29 Hanbury Street, Spitalfields, 5:30am the morning of her murder. Albert Cadosch, who lived at 27 Hanbury Street, reported hearing a woman in the next door backyard say “No”, followed by what sounded like a body falling against the fence. Approximately twenty minutes later, her badly mutilated body was found by carter John Davis near a doorway in the back yard of 29 Hanbury Street.</p>
                 <p id="informationText">Her throat had been cut in much the same manner as Mary Ann Nichols had been slashed, and her abdomen ripped entirely open. Her intestines, torn out and still attached, had been placed over her right shoulder. A later autopsy revealed that the killer had removed her uterus and parts of her vagina.
                 </p>
@@ -404,11 +417,11 @@
     <!--################################################ VICTIM 2 PAGE 2 ##############################################-->
     <div data-role="page" id="victim2p2">
         <div data-role="header" data-position="fixed" class="navheader">
-            <h1>Victim 2</h1>
+            <h1>Annie Chapman</h1>
             <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
         </div>
         <div role="main" class="ui-content">
-            <h1>Murder Victim 2</h1>
+            <h1>Murder Clue 2</h1>
             <!-- FORM FOR GUESS THE RIDDLE GAME -->
             <form action="" method="post" id="guess_form">
                 <label for="guess_word">Question: Where was she murdered?</label>
@@ -441,7 +454,7 @@
     <!-- Opening Victim 3 -->
     <div data-role="page" id="victim3">
         <div data-role="header" data-position="fixed" class="navheader">
-           
+           <h1>Elizabeth Stride</h1>
             <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
         </div>
         <div role="main" class="ui-content">
@@ -450,10 +463,14 @@
             </div>
             <div class="brickWallContainer">
                 <div class="fotorama" data-nav="thumbs">
-                    <img src="images/victims/ElizabethStride/StrideGrave.jpg">
+                    
                     <img src="images/victims/ElizabethStride/ElizabethStrideMortuary.jpg">
                     <img src="images/victims/ElizabethStride/Diemschutz_discovery.jpg">
                     <img src="images/victims/ElizabethStride/StrideDC.jpg">
+                    <img src="images/victims/ElizabethStride/found.jpg">
+                    <img src="images/victims/ElizabethStride/yard.jpg">
+                    <img src="images/victims/ElizabethStride/grave.jpg">
+                    <img src="images/victims/ElizabethStride/StrideGrave.jpg">
                 </div>
             </div>
             <div class="parchmentContainer">
@@ -489,7 +506,7 @@
     <!--################################################ VICTIM 3 PAGE 2 ##############################################-->
     <div data-role="page" id="victim3p2">
         <div data-role="header" data-position="fixed" class="navheader">
-            <h1>Victim 3</h1>
+            <h1>Elizabeth Stride</h1>
             <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
         </div>
         <div role="main" class="ui-content">
@@ -523,24 +540,27 @@
     <!--################################################ VICTIM 4 PAGE ##############################################-->
     <div data-role="page" id="victim4">
         <div data-role="header" data-position="fixed" class="navheader">
-            
+            <h1>Catherine Eddowes</h1>
             <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
         </div>
         <div role="main" class="ui-content">
             <div class="murderVictimHeader">
-                <p>Catherine Eddowes</p>
+                <p>Catherine Edowes</p>
             </div>
             <div class="brickWallContainer">
                 <div class="fotorama" data-nav="thumbs">
-                    <img src="images/victims/MaryAnnNichols/NicholsDiscovery.jpg">
-                    <img src="images/victims/MaryAnnNichols/NicholsDeathCert.jpg">
-                    <img src="images/victims/MaryAnnNichols/MANichols.jpg">
-                    <img src="images/victims/MaryAnnNichols/MNGrave.jpg">
+                <img src="images/victims/CatherineEddowes/Catherine_Eddowes.jpg">
+                    <img src="images/victims/CatherineEddowes/EddowesGrave.jpg">
+                    <img src="images/victims/CatherineEddowes/EddowesMortuary.jpg">
+                    <img src="images/victims/CatherineEddowes/mitre.jpg">
+                    <img src="images/victims/CatherineEddowes/street.jpg">
+                    <img src="images/victims/CatherineEddowes/station.jpg">
+                    
                 </div>
             </div>
             <div class="parchmentContainer">
-                <iframe id="youtubeVideo" src="https://www.youtube.com/embed/KIeOV_ZhE5s" frameborder="0" allowfullscreen></iframe>
-                <p id="informationText">Forty five minutes after Stride’s body was found in Dutfield’s Yard, Eddowes’ body was discovered in Mitre Square, within the City of London. Eddowes’ throat had been severed and her abdomen torn open with a deep, jagged wound. Her left kidney had been removed, along with a major portion of her uterus.</p>
+                <iframe id="youtubeVideo" src="https://www.youtube.com/embed/saCYBgujaFU" frameborder="0" allowfullscreen></iframe>
+                <p id="informationText">Forty five minutes after Stride’s body was found in Dutfield’s Yard, Eddowes’ body was discovered in Mitre Square, within the City of London. Eddowes’ throat had been severed and her abdomen torn open with a deep, jagged wound. Her left kidney had been removed, along with a major portion of her uterus. Catherine Eddowes was lying on her back in a pool of blood, with her clothes thrown up over her waist.</p>
                 <p id="informationText">The Stride and Eddowes murders were later referred to as the “Double Event“.
                 </p>
                 <p id="informationText"><a href="#victim4p2">Continue to solve the clue</a></p>
@@ -570,7 +590,7 @@
     <!-- Closing Victime 4 Page -->
     <div data-role="page" id="victim4p2">
         <div data-role="header" data-position="fixed" class="navheader">
-            <h1>Victim 4</h1>
+            <h1>Catherine Eddowes</h1>
             <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
         </div>
         <div role="main" class="ui-content">
@@ -596,7 +616,7 @@
     <!--################################################ VICTIM 5 PAGE ##############################################-->
     <div data-role="page" id="victim5">
         <div data-role="header" data-position="fixed" class="navheader">
-            
+            <h1>Mary Jane Kelly</h1>
             <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
         </div>
         <div role="main" class="ui-content">
@@ -606,8 +626,13 @@
             <div class="brickWallContainer">
                 <div class="fotorama" data-nav="thumbs">
                     <img src="images/victims/MaryJaneKelly/Kelly1.jpg">
+                    <img src="images/victims/MaryJaneKelly/whitechapel.jpg">
                     <img src="images/victims/MaryJaneKelly/KellyDeathCert.jpg">
                     <img src="images/victims/MaryJaneKelly/MaryKelly.jpg">
+                    <img src="images/victims/MaryJaneKelly/court.jpg">
+                    <img src="images/victims/MaryJaneKelly/millers.jpg">
+                    <img src="images/victims/MaryJaneKelly/scene.jpg">
+                    <img src="images/victims/MaryJaneKelly/grave.jpg">
                 </div>
             </div>
             <div class="parchmentContainer">
@@ -643,7 +668,7 @@
     <!--################################################ VICTIM 5 PAGE 2 ##############################################-->
     <div data-role="page" id="victim5p2">
         <div data-role="header" data-position="fixed" class="navheader">
-            <h1>Victim 5</h1>
+            <h1>Mary Jane Kelly</h1>
             <a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
         </div>
         <div role="main" class="ui-content">
