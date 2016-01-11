@@ -1,0 +1,251 @@
+<script>
+    $(document).ready(function() {
+        var total = 3;
+        var dropscore = 0;
+
+        $(dragGame);
+
+        //All code for Guessing riddle game
+
+        $("#submit_form").on("click", function(e) {
+            var murder = "Hanbury Street";
+            var guess = $('#guess_word').val();
+
+            //Validate input
+            if (guess == "") {
+                alert("Please enter a guess!");
+            } else {
+                wrongguess(guess);
+                var returned = theguess(murder, guess);
+            }
+
+            //Take the bool returned and display the answer accoringly.
+            if (returned == false) {
+                total--;
+                $("#total_guesses").html("Incorrect! " + total + " guesses left");
+
+                if (total == 0) {
+                    //this.disabled = true;
+                    $("#total_guesses").html("All your guesses are gone! No points scored here!");
+                }
+            } else if (returned == true) {
+                elizabethStride.style.visibility = "visible" ;
+                //this.disabled = true;
+            }
+
+            e.preventDefault();
+        });
+
+        function theguess(murder, guess) {
+            if (murder == guess) {
+                $("#total_guesses").html("Correct!");
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function wrongguess(guess) {
+            var guessarray = [];
+
+            guessarray.push(guess);
+
+            for (var i = 0; i < guessarray.length; i++) {
+                $("#words_guessed").html("<br>Your Last Guess was: " + guessarray.join("<br>"));
+            }
+        }
+
+        function dragGame() {
+            $('#makeMeDraggable').draggable();
+
+            $('#makeMeDraggable2').draggable();
+
+            $('#makeMeDraggable3').draggable();
+
+            $('#droppable').droppable({
+                drop: handleDropEvent
+            });
+        }
+
+        function handleDropEvent(event, ui) {
+
+            var draggable = ui.draggable.data;
+            var getAttribute = ui.draggable.attr('id');
+            var totalClues = 3;
+
+            if (getAttribute == "makeMeDraggable") {
+                dropscore++;
+                ui.draggable.draggable('disable');
+                $("#drop_score").html(dropscore + " / " + totalClues);
+            }
+
+            if (getAttribute == "makeMeDraggable2") {
+                dropscore++;
+                ui.draggable.draggable('disable');
+                $("#drop_score").html(dropscore + " / " + totalClues);
+            }
+
+            if (getAttribute == "makeMeDraggable3") {
+                dropscore++;
+                ui.draggable.draggable('disable');
+                $("#drop_score").html(dropscore + " / " + totalClues);
+            }
+
+            if (dropscore == totalClues) {
+                $("#drop_score").html(dropscore + " / " + totalClues);
+            }
+
+        }
+
+    });
+
+    $(function() {
+        $("#datepicker").datepicker();
+    });
+
+    function findTotal() {
+        var arr = document.getElementsByName('qty');
+        var pri = document.getElementsByName('price');
+
+        var arrV = parseInt(arr.value);
+        var priV = parseInt(arr.value);
+
+        //var tot = arrV * priV;
+        var tot = 0;
+
+        for (var i = 0; i < arr.length; i++) {
+            if (parseInt(arr[i].value))
+                tot += parseInt(arr[i].value) * parseInt(pri[i].value);
+        }
+        document.getElementById('total').value = tot;
+    }
+
+    jQuery(function($) {
+
+        var $form = $('#frmBooking');
+        var handler = StripeCheckout.configure({
+
+            key: 'pk_test_cp21BcECf4kMMUbSlRlZlsMo',
+            token: function(token) {
+
+                if (token.id) {
+                    $("#thankyouPayment").html("Thank you your payment went through");
+                }
+            }
+
+
+        });
+
+
+        $('#customButton').on('click', function(e) {
+            // Open Checkout with further options
+            handler.open({
+                name: 'Demo Site',
+                currency: 'gbp',
+                description: $('#item_name').val(),
+                amount: $('#total').val() * 100
+            });
+            e.preventDefault();
+        });
+
+        // Close Checkout on page navigation
+        $(window).on('popstate', function() {
+            handler.close();
+        });
+    });
+
+
+
+    //FAVOURITES PAGE START
+    function fav() {
+        
+
+        if ($("#favourite1").is(":checked")) {
+
+            var $item1 = $('<a href="#victim1" class="ui-btn ui-btn-a ui-btn-inline">').text("Hanbury Street");
+
+            $("#favourite-content").empty().append($item1);
+
+        } else {
+            $("#favourite-content").html("");
+        }
+
+        if ($("#favourite2").is(":checked")) {
+            var $item2 = $('<a href="#victim2" class="ui-btn ui-btn-a ui-btn-inline">').text("Mitre Square");
+
+            $("#favourite-content").append($item2);
+        }
+
+
+
+        if ($("#favourite3").is(":checked")) {
+            var $item3 = $('<a href="#victim3" class="ui-btn ui-btn-a ui-btn-inline">').text("Henriques Street");
+
+            $("#favourite-content").append($item3);
+
+        }
+
+
+        if ($("#favourite4").is(":checked")) {
+            var $item4 = $('<a href="#victim4" class="ui-btn ui-btn-a ui-btn-inline">').text("Durward Street");
+
+            $("#favourite-content").append($item4);
+        }
+
+
+        if ($("#favourite5").is(":checked")) {
+            var $item5 = $('<a href="#victim5" class="ui-btn ui-btn-a ui-btn-inline">').text("Dorset Street");
+
+            $("#favourite-content").append($item5);
+        }
+
+
+
+    }
+
+    function clearFav() {
+
+        $("#favourite-content").empty()
+
+    }
+
+    //FAVOURITES PAGE END
+
+    //KNIFE GAME START
+
+    function userGuess() {
+
+        var ans = document.getElementById('ans').value;
+
+        if (ans == "knife") {
+            document.getElementById("pannel").innerHTML = '<img src="knife.jpg" height="300" width="300""/>';
+            alert("correct");
+            catherineEddowes.style.visibility = "visible" ;
+
+            //change image pixels, only made it smaller to test.
+
+        } else {
+            alert("wrong");
+        }
+
+    }
+
+    //Knife game end
+
+    //anagram game
+
+    function calculate() {
+        var answer = document.getElementById("answer").value;
+        if (answer == 'whitechapel') {
+            
+            alert("Correct");
+            annChapman.style.visibility = "visible" ;
+            window.location.href = "#poimap";
+        } else {
+            console.log('incorrect');
+            alert("inCorrect");
+        }
+    };
+
+    //anagram game end
+    </script>

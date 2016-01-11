@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ripper Street</title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" type="text/css" href="alexstyle.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" href="jquery.ui.datepicker.mobile.css" /> 
+  <script src="jQuery.ui.datepicker.js"></script>
+  <script src="jquery.ui.datepicker.mobile.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="home">
+
+   <div data-role="header" data-position="fixed" class="navheader">
+    
+	<h1>Ripper Hunt</h1>
+	
+	<a href="#navpanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+	
+  </div>
+  
+  <div role="main" class="ui-content">
+
+  <h1>Discover Code To Unlock!</h1>
+  
+  <input type="text" name="code" id="hCode">
+    <button onclick="submit()">Submit</button>
+    
+    <script>
+		var hiddenCode = 1234;
+		function submit(){
+			
+		if (document.getElementById('hCode').value == hiddenCode) {
+			document.bgColor='green';
+		}
+		else{
+			document.bgColor='red';
+		}
+		}
+    </script>
+  </div>
+  <div data-role="footer" >
+    <h1>&copy; Group One</h1>
+  </div>
+  
+  <div data-role="panel" id="navpanel" data-position-fixed="true">
+		<ul data-role="listview">
+		<div data-mini="true" class="ui-input-search">
+			<input data-mini="true" placeholder="Search"> </input>
+		</div>
+			<li><a href="#poimap">Home</a></li>
+			<li><a href="#rules">Rules</a></li>
+			<li><a href="#favourites">Favourites</a></li>
+			<li><a href="#newsletter">Newsletter</a></li>
+			<li><a href="#booking">Booking</a></li>
+		</ul>
+	</div><!-- /panel -->
+  
+</div>
+</body>
+</html>

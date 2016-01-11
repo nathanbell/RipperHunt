@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test Game</title>
+</head>
+
+<body>
+	<h1>Discover Code to Unlock!</h1>
+    
+    <input type="text" name="code" id="hCode">
+    <button onclick="submit()">Submit</button>
+    
+    <script>
+		var hiddenCode = 1234;
+		function submit(){
+			
+		if (document.getElementById('hCode').value == hiddenCode) {
+			document.bgColor='green';
+		}
+		else{
+			document.bgColor='red';
+		}
+		}
+    </script>
+</body>
+</html>

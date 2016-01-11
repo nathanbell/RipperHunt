@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<title>Sample Map</title>
+<meta name="TestKey2015MobileProject" content="initial-scale=1.0">
+<meta charset="UTF-8">
+<style>
+	html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	#map {
+		height: 100%;
+	}
+	#floating-panel {
+		position: absolute;
+		top: 10px;
+		left: 25%;
+		z-index: 5;
+		background-color: #fff;
+		padding: 5px;
+		border: 1px solid #999;
+		text-align: center;
+		font-family: 'Roboto', 'sans-serif';
+		line-height: 30px;
+		padding-left: 10px;
+	}
+</style>
+</head>
+<body>
+	<div id="floating-panel">
+    <b>Start: </b>
+    <select id="start" onchange="calcRoute();">
+      <option value="Leman Street Police Station, Whitechapel, London, United Kingdom">Leman Street</option>
+      <option value="White's Row, Whitechapel, London, United Kingdom">Miller's Court</option>
+      <option value="Hanbury Street, Whitechapel, London, United Kingdom">Hanbury Street</option>
+      <option value="Durward Street, Whitechapel, London, United Kingdom">Former Buck's Row</option>
+      <option value="Whitechapel Station, Whitechapel, London, United Kingdom">Former Working Lads Institute</option>
+      <option value="Wentworth Street, Whitechapel, London, United Kingdom">Junction Brick Lane and Osborne Street</option>
+      <option value="Gunthorpe Street, Whitechapel, London, United Kingdom">Former George Yard</option>
+      <option value="Mitre Square, Whitechapel, London, United Kingdom">Mitre Square</option>
+      <option value="Henriques Street, Whitechapel, London, United Kingdom">Former Berner Street</option>
+    </select>
+    <b>End: </b>
+    <select id="end" onchange="calcRoute();">
+      <option value="Leman Street Police Station, Whitechapel, London, United Kingdom">Leman Street</option>
+      <option value="White's Row, Whitechapel, London, United Kingdom">Miller's Court</option>
+      <option value="Hanbury Street, Whitechapel, London, United Kingdom">Hanbury Street</option>
+      <option value="Durward Street, Whitechapel, London, United Kingdom">Former Buck's Row</option>
+      <option value="Whitechapel Station, Whitechapel, London, United Kingdom">Former Working Lads Institute</option>
+      <option value="Wentworth Street, Whitechapel, London, United Kingdom">Junction Brick Lane and Osborne Street</option>
+      <option value="Gunthorpe Street, Whitechapel, London, United Kingdom">Former George Yard</option>
+      <option value="Mitre Square, Whitechapel, London, United Kingdom">Mitre Square</option>
+      <option value="Henriques Street, Whitechapel, London, United Kingdom">Former Berner Street</option>
+    </select>
+    </div>
+    <div id="map"></div>
+    <script>
+function initMap() {
+	var customMapType = new google.maps.StyledMapType([
+      {
+        stylers: [
+          {hue: '#890000'},
+          {visibility: 'simplified'},
+          {gamma: 0.5},
+          {weight: 0.5}
+        ]
+      },
+      {
+        elementType: 'labels',
+        stylers: [{visibility: 'off'}]
+      },
+      {
+        featureType: 'water',
+        stylers: [{color: '#890000'}]
+      }
+    ], {
+      name: 'Custom Style'
+  });
+  var customMapTypeId = 'custom_style';
+	
+  var directionsService = new google.maps.DirectionsService;
+  var directionsDisplay = new google.maps.DirectionsRenderer;
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: {lat: 51.514, lng: -0.0729},
+	mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+    }
+	
+  });
+  
+ map.mapTypes.set(customMapTypeId, customMapType);
+  map.setMapTypeId(customMapTypeId);
+  
+  
+  directionsDisplay.setMap(map);
+
+  var onChangeHandler = function() {
+    calculateAndDisplayRoute(directionsService, directionsDisplay);
+  };
+  document.getElementById('start').addEventListener('change', onChangeHandler);
+  document.getElementById('end').addEventListener('change', onChangeHandler);
+}
+
+function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+  directionsService.route({
+    origin: document.getElementById('start').value,
+    destination: document.getElementById('end').value,
+    travelMode: google.maps.TravelMode.WALKING
+  }, function(response, status) {
+    if (status === google.maps.DirectionsStatus.OK) {
+      directionsDisplay.setDirections(response);
+    } else {
+      window.alert('Directions request failed due to ' + status);
+    }
+  });
+}
+
+    
+		/*infoWindow = new google.maps.InfoWindow({map: map});
+		
+		
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(function(position){
+				var pos = {
+					lat: position.coords.latitude,
+					lng: position.coords.longitude
+				};
+				
+				infoWindow.setPosition(pos);
+				infoWinodw.setContent('Location Found');
+				map.setCenter(pos);
+			}, function() {
+				handleLocationError(true, infoWindow, map.getCenter());
+			});
+			else{
+				
+				handleLocationError(false, infoWindow, map.getCenter());
+			}
+			
+			function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+				infoWindow.setPosition(pos);
+				infoWindow.setContent(browserHasGeolocation ? 
+				'Error: The Geolocation service failed.' : 
+				'Error: Your browser doesn\'t support Geolocation');
+			}
+		*/
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCB4eCT7wBY9UiX-_89riFfEkwxOIu5Lfg&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/directions/output?parameters"></script>
+</body>
+</html>
