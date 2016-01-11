@@ -92,27 +92,27 @@
             <div class="brickWallContainer" id="sizeofpiece">
                 <div class="parchmentThin"><h3 style="text-align:center;">Work your way through the murders....</h3></div>
                 <a href="#victim1">
-                    <div id='murderContainer'><img src="images/victims/MaryAnnNichols/dead.png">Mary Ann Nichols
+                    <div class ="murderContainer"><img src="images/victims/MaryAnnNichols/dead.png">Mary Ann Nichols
                         <p id="address">Address: Durward Street </p>
                     </div>
                 </a>
                 <a href="#victim2">
-                    <div id='murderContainer'><img src="images/victims/AnnChapman/dead.png">Ann Chapman
+                    <div class='murderContainer' id='annChapman'><img src="images/victims/AnnChapman/dead.png">Ann Chapman
                         <p id="address">Address: Hanbury Street</p>
                     </div>
                 </a>
                 <a href="#victim3">
-                    <div id='murderContainer'><img src="images/victims/ElizabethStride/dead.png">Elizabeth Stride
+                    <div class='murderContainer' id='elizabethStride'><img src="images/victims/ElizabethStride/dead.png">Elizabeth Stride
                         <p id="address">Address: Dutfield's Yard</p>
                     </div>
                 </a>
                 <a href="#victim4">
-                    <div id='murderContainer'><img src="images/victims/CatherineEddowes/dead.png">Catherine Eddowes
+                    <div class='murderContainer' id='catherineEddowes'><img src="images/victims/CatherineEddowes/dead.png">Catherine Eddowes
                         <p id="address">Address: Mitre Square</p>
                     </div>
                 </a>
                 <a href="#victim5">
-                    <div id='murderContainer'><img src="images/victims/MaryJaneKelly/dead.png">Mary Jane Kelly
+                    <div class='murderContainer' id='maryJane'><img src="images/victims/MaryJaneKelly/dead.png">Mary Jane Kelly
                         <p id="address">Address: Miller's Court</p>
                     </div>
                 </a>
@@ -388,15 +388,14 @@
             </div>
             <!-- 2. Add images to <div class="fotorama"></div>. -->
             <div class="brickWallContainer">
-                <div class="fotorama" data-nav="thumbs" data-width="30%" data-ratio="800/600">>
-                    
-                    <img src="images/victims/AnnChapman/chapman.jpg">
+                <div class="fotorama" data-nav="thumbs">
+                <img src="images/victims/AnnChapman/chapman.jpg">
+                    <img src="images/victims/AnnChapman/murder.jpg">
+                    <img src="images/victims/AnnChapman/backdoor.jpg">
+                    <img src="images/victims/AnnChapman/spitalfields.jpg">
                     <img src="images/victims/AnnChapman/chapman2.jpg">
                     <img src="images/victims/AnnChapman/DCchapman.jpg">
-                    <img src="images/victims/AnnChapman/backdoor.jpg">
-                    <img src="images/victims/AnnChapman/murder.jpg">
                     <img src="images/victims/AnnChapman/passage.jpg">
-                    <img src="images/victims/AnnChapman/spitalfields.jpg">
                     <img src="images/victims/AnnChapman/grave.jpg">
                 </div>
             </div>
@@ -666,8 +665,7 @@
                 <iframe id="youtubeVideo" src="https://www.youtube.com/embed/MhcpkUnmIlk" frameborder="0" allowfullscreen></iframe>
                 <p id="informationText">Considered to be Jack the Ripper’s Swan Song, Mary Jane Kelly’s murder was the most gruesome of all the Whitechapel Murders. She was found horribly mutilated, lying on the bed in her single room flat where she lived at 13 Miller’s Court, off Dorset Street, Spitalfields. She was discovered at 10:45am on the morning of Friday, November 9, 1888.</p>
                 <p id="informationText">The landlord’s assistant, Thomas Bowyer, had been sent over to collect the rent, which she had been weeks behind in paying. When she didn’t answer his knock at the door, Bowyer reach his hand through a crack in the window, pushing aside a coat being used as makeshift drapery. What he saw at that moment was absolutely horrific.</p>
-                <p id="informationText">Kelly’s body was mutilated beyond recognition. Her entire abdominal cavity had been emptied out, her breasts cut off, and her viscera had been deliberately placed beneath her head and on the bedside table. Kelly’s face had been hacked away and her heart removed, which was also absent from the crime scene. Kelly’s murder was by far the most grisly and ritualistic of all.
-                </p>
+                <p id="informationText">Kelly’s body was mutilated beyond recognition. Her entire abdominal cavity had been emptied out, her breasts cut off, and her viscera had been deliberately placed beneath her head and on the bedside table. Kelly’s face had been hacked away and her heart removed, which was also absent from the crime scene. Kelly’s murder was by far the most grisly and ritualistic of all.</p>
                 <p id="informationText"><a href="#victim5p2">Continue to solve the clue</a></p>
                 <a href="#favourites" class="ui-btn ui-btn-a ui-btn-inline" onClick="fav();"> Favourites</a>
                 <input type="checkbox" id="favourite5">
@@ -766,11 +764,12 @@
                 $("#total_guesses").html("Incorrect! " + total + " guesses left");
 
                 if (total == 0) {
-                    this.disabled = true;
+                    //this.disabled = true;
                     $("#total_guesses").html("All your guesses are gone! No points scored here!");
                 }
             } else if (returned == true) {
-                this.disabled = true;
+                elizabethStride.style.visibility = "visible" ;
+                //this.disabled = true;
             }
 
             e.preventDefault();
@@ -898,7 +897,7 @@
 
     //FAVOURITES PAGE START
     function fav() {
-        console.log("here")
+        
 
         if ($("#favourite1").is(":checked")) {
 
@@ -960,6 +959,7 @@
         if (ans == "knife") {
             document.getElementById("pannel").innerHTML = '<img src="knife.jpg" height="300" width="300""/>';
             alert("correct");
+            catherineEddowes.style.visibility = "visible" ;
 
             //change image pixels, only made it smaller to test.
 
@@ -978,6 +978,7 @@
         if (answer == 'whitechapel') {
             console.log('Correct');
             alert("Correct");
+            annChapman.style.visibility = "visible" ;
         } else {
             console.log('incorrect');
             alert("inCorrect");

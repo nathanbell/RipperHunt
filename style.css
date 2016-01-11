@@ -160,7 +160,7 @@
     margin: 0 auto;
   }
 
-  #murderContainer{
+  .murderContainer{
     width: 200px;
     height: auto;
     background-color:rgba(0, 0, 0, 0.5);
@@ -172,6 +172,9 @@
     color: white;
     
 
+  }
+  #annChapman,#elizabethStride,#catherineEddowes,#maryJane{
+    visibility: hidden;
   }
 
     #murderContainer2{
